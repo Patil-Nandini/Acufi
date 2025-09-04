@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.custom-shift {
+  position: relative;
+  top: -64px; /* same as Tailwind -top-16 */
+}
+@media (max-width: 767px) {
+  .video-pipeline {
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: 100vh;
+    height: 100vw;
+  }
+}
