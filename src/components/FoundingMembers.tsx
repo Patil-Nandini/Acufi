@@ -1,10 +1,11 @@
+import Image from "next/image";
+
 export default function FoundingMembersPage() {
   return (
     <div
       className="bg-gray-50 font-sarabun text-gray-800 overflow-x-hidden w-full flex justify-center items-center bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage:
-          "url('/bg-founding-members.webp')",
+        backgroundImage: "url('/bg-founding-members.webp')",
       }}
     >
       <div className="relative container mx-auto px-4 py-16 sm:py-24 w-[80%]">
@@ -53,13 +54,15 @@ export default function FoundingMembersPage() {
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                     <object
                       type="image/svg+xml"
-                      data="https://acufi.com/images/Easy-3-Step-Setup .svg"
+                      data="/Easy-3-Step-Setup .svg"
                       className="w-22 h-22"
                       aria-label="Easy 3-Step Setup icon"
                     >
-                      <img
-                        src="https://acufi.com/images/Easy-3-Step-Setup .svg"
+                      <Image
+                        src="/Easy-3-Step-Setup.svg"
                         alt="Easy 3-Step Setup icon"
+                        width={88}
+                        height={88}
                         className="w-22 h-22"
                       />
                     </object>
@@ -80,9 +83,11 @@ export default function FoundingMembersPage() {
             </div>
           </div>
           <div className="flex justify-end items-center w-full">
-            <img
-              src="https://acufi.com/wp-content/uploads/2025/07/Maskgroup.webp"
+            <Image
+              src="/Maskgroup.webp"
               alt="Cash flow is the new credit score illustration"
+              width={1200}
+              height={800}
               className="w-[85%] h-auto"
             />
           </div>
@@ -90,9 +95,11 @@ export default function FoundingMembersPage() {
 
         <section className="mt-24 sm:mt-32 text-center">
           <div className="max-w-4xl mx-auto">
-            <img
-              src="https://acufi.com/wp-content/uploads/2025/07/SET-UP-PROCESS.webp"
+            <Image
+              src="/SET-UP-PROCESS.webp"
               alt="Setup Process"
+              width={800}
+              height={400}
               className="mx-auto mb-2"
             />
           </div>
@@ -101,20 +108,21 @@ export default function FoundingMembersPage() {
             <div
               className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
               style={{
-                backgroundImage:
-                  "url('https://acufi.com/wp-content/uploads/2025/07/SET-UP-PROCESS-bg.webp')",
+                backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
               <object
                 className="w-26 h-26 mb-4"
                 type="image/svg+xml"
-                data="https://acufi.com/images/step-up-process-1.svg"
+                data="/step-up-process-1.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
               >
-                <img
-                  src="https://acufi.com/images/step-up-process-1.svg"
-                  alt="Step 1: Account Creation & Verification icon"
-                  className="w-16 h-16 mb-4"
+                <Image
+                  src="/step-up-process-1.svg"
+                  alt="Step 1"
+                  width={64}
+                  height={64}
+                  className="mb-4"
                 />
               </object>
               <h4 className="text-md font-semibold text-black">STEP 1</h4>
@@ -123,11 +131,10 @@ export default function FoundingMembersPage() {
               </h4>
             </div>
 
-           <div
+            <div
               className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
               style={{
-                backgroundImage:
-                  "url('https://acufi.com/wp-content/uploads/2025/07/SET-UP-PROCESS-bg.webp')",
+                backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
               <object
@@ -136,23 +143,24 @@ export default function FoundingMembersPage() {
                 data="https://acufi.com/images/step-up-process-2.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
               >
-                <img
-                  src="https://acufi.com/images/step-up-process-2.svg"
-                  alt="Step 1: Account Creation & Verification icon"
-                  className="w-16 h-16 mb-4"
+                <Image
+                  src="/step-up-process-2.svg"
+                  alt="Step 2"
+                  width={64}
+                  height={64}
+                  className="mb-4"
                 />
               </object>
               <h4 className="text-md font-semibold text-black">STEP 2</h4>
               <h4 className="mt-2 font-semibold text-[#0F1720B2]">
-                  API INTEGRATION & TESTING
+                API INTEGRATION & TESTING
               </h4>
             </div>
 
-             <div
+            <div
               className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
               style={{
-                backgroundImage:
-                  "url('https://acufi.com/wp-content/uploads/2025/07/SET-UP-PROCESS-bg.webp')",
+                backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
               <object
@@ -161,10 +169,12 @@ export default function FoundingMembersPage() {
                 data="https://acufi.com/images/step-up-process-3.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
               >
-                <img
-                  src="https://acufi.com/images/step-up-process-3.svg"
-                  alt="Step 1: Account Creation & Verification icon"
-                  className="w-16 h-16 mb-4"
+                <Image
+                  src="/step-up-process-3.svg"
+                  alt="Step 3"
+                  width={64}
+                  height={64}
+                  className="mb-4"
                 />
               </object>
               <h4 className="text-md font-semibold text-black">STEP 3</h4>

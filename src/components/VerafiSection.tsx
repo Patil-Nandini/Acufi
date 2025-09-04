@@ -263,8 +263,12 @@ const VerafiSection = () => {
           </h2>
           <div className="flex flex-col gap-5">
             <p
-              className="flex items-center gap-2 text-[16px] font-normal leading-[1.4] bg-[#ECF6FF] px-4 py-2 rounded-[10px] border border-transparent bg-clip-padding 
-              [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] bg-origin-border"
+              className="flex items-center gap-[10px] text-[16px] font-normal leading-[1.4] 
+  px-[18px] py-[10px] rounded-[10px] border border-transparent 
+  bg-[#ECF6FF] 
+  [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] 
+  [background-origin:border-box] 
+  [background-clip:padding-box,border-box]"
             >
               <Image
                 src="/Lenders.svg"
@@ -276,8 +280,12 @@ const VerafiSection = () => {
               Lenders
             </p>
             <p
-              className="flex items-center gap-2 text-[16px] font-normal leading-[1.4] bg-[#ECF6FF] px-4 py-2 rounded-[10px] border border-transparent bg-clip-padding 
-              [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] bg-origin-border"
+              className="flex items-center gap-[10px] text-[16px] font-normal leading-[1.4] 
+  px-[18px] py-[10px] rounded-[10px] border border-transparent 
+  bg-[#ECF6FF] 
+  [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] 
+  [background-origin:border-box] 
+  [background-clip:padding-box,border-box]"
             >
               <Image
                 src="/StartUp.svg"
@@ -289,8 +297,12 @@ const VerafiSection = () => {
               Fintech Startups
             </p>
             <p
-              className="flex items-center gap-2 text-[16px] font-normal leading-[1.4] bg-[#ECF6FF] px-4 py-2 rounded-[10px] border border-transparent bg-clip-padding 
-              [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] bg-origin-border"
+              className="flex items-center gap-[10px] text-[16px] font-normal leading-[1.4] 
+  px-[18px] py-[10px] rounded-[10px] border border-transparent 
+  bg-[#ECF6FF] 
+  [background-image:linear-gradient(#ECF6FF,#ECF6FF),linear-gradient(270.54deg,#FFFFFF_2.69%,#71AFFF_78.63%)] 
+  [background-origin:border-box] 
+  [background-clip:padding-box,border-box]"
             >
               <Image
                 src="/Business.svg"

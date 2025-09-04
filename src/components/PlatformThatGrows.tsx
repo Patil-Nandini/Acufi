@@ -1,5 +1,3 @@
-// components/Comparison.tsx
-
 import Image from "next/image";
 
 export default function Comparison() {
@@ -7,8 +5,7 @@ export default function Comparison() {
     <section
       className="relative py-20 px-6 md:px-12 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage:
-          "url('https://acufi.com/wp-content/uploads/2025/07/A-platform-That-Grows-with-You-bg.webp')",
+        backgroundImage: "url('/A-platform-That-Grows-with-You-bg.webp')",
       }}
     >
       <div className="max-w-7xl mx-auto flex flex-col items-center relative">
@@ -20,6 +17,17 @@ export default function Comparison() {
             zIndex: 10,
           }}
         >
+          {/* <Image
+            src="/man-Image.webp"
+            alt="Man"
+            width={600}
+            height={760}
+            className="max-h-[760px] w-auto"
+            style={{
+              filter: "drop-shadow(0 4px 20px rgba(0,0,0,0.15))",
+            }}
+            priority
+          /> */}
           <img
             src="https://acufi.com/wp-content/uploads/2025/08/man-Image-with-White.webp"
             alt="Man"
@@ -45,7 +53,7 @@ export default function Comparison() {
         <div className="w-[88%] py-12 relative top-[124px]">
           <div className="max-w-6xl mx-auto px-4">
             <div className="overflow-x-auto">
-           <table className="w-full border border-gray-200 overflow-hidden bg-white rounded-[30px]">
+              <table className="w-full border border-gray-200 overflow-hidden bg-white rounded-[30px]">
                 <thead
                   className="text-white "
                   style={{
@@ -64,20 +72,24 @@ export default function Comparison() {
                     <td className="py-4 px-18">Account Setup Time</td>
                     <td className="py-4 px-18 text-green-600 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
+                        <Image
+                          src="/Frame-2147226778.svg"
                           alt=""
-                          className="w-5 h-5 mr-2"
+                          width={20}
+                          height={20}
+                          className="mr-2"
                         />
                         1 - 3 Days
                       </div>
                     </td>
                     <td className="py-4 px-18 text-red-500 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
+                        <Image
+                          src="/Icons.svg"
                           alt=""
-                          className="w-5 h-5 mr-2"
+                          width={20}
+                          height={20}
+                          className="mr-2"
                         />
                         2 - 6 Weeks
                       </div>
@@ -88,9 +100,11 @@ export default function Comparison() {
                     <td className="py-4 px-18">Credit Risk Insights</td>
                     <td className="py-4 px-18 text-green-600 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
+                        <Image
+                          src="/Frame-2147226778.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Real-Time Cash Flow analysis + Loan Stacking
@@ -98,10 +112,12 @@ export default function Comparison() {
                     </td>
                     <td className="py-4 px-18 text-red-500 font-medium">
                       <div className="flex items-start">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
+                        <Image
+                          src="/Icons.svg"
                           alt=""
-                          className="w-5 h-5 mr-2 mt-1"
+                          width={20}
+                          height={20}
+                          className="w-5 h-5 mr-2"
                         />
                         Outdated Reports <br />
                         (30 - 60 days)
@@ -113,9 +129,11 @@ export default function Comparison() {
                     <td className="py-4 px-18">Approval Rates</td>
                     <td className="py-4 px-18 text-green-600 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
+                        <Image
+                          src="/Frame-2147226778.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         High Approval Rates
@@ -123,9 +141,11 @@ export default function Comparison() {
                     </td>
                     <td className="py-4 px-18 text-red-500 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
+                        <Image
+                          src="/Icons.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Declined
@@ -137,9 +157,11 @@ export default function Comparison() {
                     <td className="py-4 px-18">Customization</td>
                     <td className="py-4 px-18 text-green-600 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
+                        <Image
+                          src="/Frame-2147226778.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Flexible & Tailored
@@ -147,9 +169,11 @@ export default function Comparison() {
                     </td>
                     <td className="py-4 px-18 text-red-500 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
+                        <Image
+                          src="/Icons.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Minimal
@@ -161,9 +185,11 @@ export default function Comparison() {
                     <td className="py-4 px-18">Processes</td>
                     <td className="py-4 px-18 text-green-600 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
+                        <Image
+                          src="/Frame-2147226778.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Streamlined Digital Process
@@ -171,9 +197,11 @@ export default function Comparison() {
                     </td>
                     <td className="py-4 px-18 text-red-500 font-medium">
                       <div className="flex items-center">
-                        <img
-                          src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
+                        <Image
+                          src="/Icons.svg"
                           alt=""
+                          width={20}
+                          height={20}
                           className="w-5 h-5 mr-2"
                         />
                         Paper-heavy, Slow
@@ -198,10 +226,12 @@ export default function Comparison() {
                   Account Setup Time
                 </p>
                 <p className="text-green-600 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Frame-2147226778.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   1 - 3 Days
                 </p>
@@ -211,10 +241,12 @@ export default function Comparison() {
                   Credit Risk Insights
                 </p>
                 <p className="text-green-600 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Frame-2147226778.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Real-Time Cash Flow analysis + Loan Stacking
                 </p>
@@ -224,10 +256,12 @@ export default function Comparison() {
                   Industry Support
                 </p>
                 <p className="text-green-600 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Frame-2147226778.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Short-term lending, Peptides, Cannabis, Crypto, etc.
                 </p>
@@ -237,10 +271,12 @@ export default function Comparison() {
                   Fraud Detection
                 </p>
                 <p className="text-green-600 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Frame-2147226778.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Behavioral + Warnings
                 </p>
@@ -250,10 +286,12 @@ export default function Comparison() {
                   Onboarding Experience
                 </p>
                 <p className="text-green-600 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Frame-2147226778.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   100% Digital
                 </p>
@@ -272,10 +310,12 @@ export default function Comparison() {
                   Account Setup Time
                 </p>
                 <p className="text-red-500 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Icons.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   2 - 6 Weeks
                 </p>
@@ -285,10 +325,12 @@ export default function Comparison() {
                   Credit Risk Insights
                 </p>
                 <p className="text-red-500 flex items-start text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                    className="w-5 h-5 mr-2 mt-1"
+                  <Image
+                    src="/Icons.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Outdated Reports (30 - 60 days)
                 </p>
@@ -298,10 +340,12 @@ export default function Comparison() {
                   Industry Support
                 </p>
                 <p className="text-red-500 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Icons.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Declined
                 </p>
@@ -311,10 +355,12 @@ export default function Comparison() {
                   Fraud Detection
                 </p>
                 <p className="text-red-500 flex items-center text-sm">
-                  <img
-                    src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                    className="w-5 h-5 mr-2"
+                  <Image
+                    src="/Icons.svg"
                     alt=""
+                    width={20}
+                    height={20}
+                    className="w-5 h-5 mr-2"
                   />
                   Minimal
                 </p>
@@ -325,11 +371,11 @@ export default function Comparison() {
                 </p>
                 <p className="text-red-500 flex items-center text-sm">
                   <Image
-                    src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                    alt="cross"
+                    src="/Icons.svg"
+                    alt=""
                     width={20}
                     height={20}
-                    className="icon"
+                    className="w-5 h-5 mr-2"
                   />
                   Paper-heavy, slow
                 </p>
@@ -343,22 +389,20 @@ export default function Comparison() {
             type="button"
             className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
             style={{
-              backgroundImage:
-                "url('https://acufi.com/wp-content/uploads/2025/07/button-bg.webp')",
+              backgroundImage: "url('/button-bg.webp')",
               backgroundSize: "100% 100%",
               backgroundRepeat: "no-repeat",
               paddingBottom: "15px",
             }}
             aria-label="Get A Demo"
           >
-            <object
-              type="image/svg+xml"
-              data="https://acufi.com/images/rocket.svg"
-              className="w-10 h-7 mr-2"
-              aria-label="Rocket icon"
-            >
-              Rocket icon
-            </object>
+            <Image
+              src="/RocketIcon.png"
+              alt="Rocket Icon"
+              width={20}
+              height={20}
+              className="mr-3"
+            />
             <span>Get A Demo!</span>
           </button>
         </div>

@@ -63,7 +63,7 @@ export default function AcuPay() {
           </object>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+      {/* <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
         <div
           className="relative flex-1 flex items-center justify-center"
           style={{ minWidth: "340px", maxWidth: "410px", height: "380px" }}
@@ -152,10 +152,53 @@ export default function AcuPay() {
             </div>
           </div>
         </div>
+      </div> */}
+ 
+      <div className="relative bg-[#0B2D58] px-10 pb-5 flex items-center w-[80%] justify-between">
+
+        <div
+          className="transform -rotate-3  w-[400px] h-[400] p-9 pl-18 pr-10 rounded-xl text-[#FFFFFF] flex flex-col gap-3 relative z-10"
+          style={{
+            backgroundImage: "url('/ACH-Processing-bg.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="font-semibold text-lg">ACH Processing</h3>
+          <ul className="flex flex-col gap-4">
+            <li>✅ Same-Day And Next-Day ACH Settlements</li>
+            <li>✅ Ideal For Recurring Payments And Loan Repayments</li>
+            <li>✅ Lower Fees Than Card Processing</li>
+            <li>✅ NACHA-Compliant Risk Monitoring</li>
+          </ul>
+        </div>
+        <object
+          type="image/svg+xml"
+          data="/pin.svg"
+          className="w-[300px] h-[200px]"
+          aria-label="Payment Connectivity"
+        >
+          Payment Connectivity Icon
+        </object>
+        <div className="transform rotate-3  w-[400px] h-[400] p-9 pl-10 pr-15 rounded-xl text-[#FFFFFF] flex flex-col gap-3 relative z-10 ml-[-50px]"  style={{
+              backgroundImage: "url('/Credit-Debit-Card-Processing.webp')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}>
+          <h3 className="font-semibold text-lg">
+            Credit & Debit Card Processing
+          </h3>
+          <ul className="flex flex-col gap-4">
+            <li>✅ Accept All Major Card Brands</li>
+            <li>✅ Built-In Fraud Protection And Chargeback Mitigation</li>
+            <li>✅ Fast, Secure Digital Checkout Experiences</li>
+            <li>✅ Supports High Volume And High-Ticket Transactions</li>
+          </ul>
+        </div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-2 mt-2 text-white mx-5 lg:mx-[50px] w-[80%] justify-center ">
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5">
+        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5 rounded-b-[14px]">
           <h3 className="text-xl md:text-2xl font-semibold mb-6">
             Why AcuPay Works For You
           </h3>
@@ -186,7 +229,7 @@ export default function AcuPay() {
           </ul>
         </div>
 
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5">
+        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5 rounded-b-[14px]">
           <h3 className="text-xl md:text-2xl font-semibold mb-6">
             Membership & Subscription Billing
           </h3>

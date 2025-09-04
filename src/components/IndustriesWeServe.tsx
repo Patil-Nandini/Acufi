@@ -7,7 +7,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Short-Term-lending.svg"
+        data="/Short-Term-lending.svg"
         width="180"
         height="150"
         className="block"
@@ -23,7 +23,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Title-Lending.svg"
+        data="/Title-Lending.svg"
         width="180"
         height="150"
         className="block"
@@ -39,7 +39,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/CBD-Cannabis.svg"
+        data="/CBD-Cannabis.svg"
         width="180"
         height="150"
         className="block"
@@ -55,7 +55,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Credit-Repair.svg"
+        data="/Credit-Repair.svg"
         width="180"
         height="150"
         className="block"
@@ -71,7 +71,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Nutraceuticals-Supplements.svg"
+        data="Nutraceuticals-Supplements.svg"
         width="180"
         height="150"
         className="block"
@@ -87,7 +87,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Debt-Relief.svg"
+        data="/Debt-Relief.svg"
         width="180"
         height="150"
         className="block"
@@ -103,7 +103,7 @@ const industries = [
     svg: (
       <object
         type="image/svg+xml"
-        data="https://acufi.com/images/Affiliate-Lead-Generation-Marketing.svg"
+        data="/Affiliate-Lead-Generation-Marketing.svg"
         width="180"
         height="150"
         className="block"
@@ -121,7 +121,7 @@ export default function Industries() {
       className="py-16 px-6 md:px-12 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url('https://acufi.com/wp-content/uploads/2025/07/IndustriesWeServe-bg.webp')",
+          "url('/IndustriesWeServe-bg.webp')",
       }}
     >
       <div className="max-w-6xl mx-auto text-center">

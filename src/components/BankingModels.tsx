@@ -8,7 +8,7 @@ const BankingModels = () => {
       className="font-sarabun text-gray-800 overflow-x-hidden w-full flex justify-center items-center bg-no-repeat bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('/checks-bg.webp')",
+          "url('https://acufi.com/wp-content/uploads/2025/07/checks-bg.webp')",
       }}
     >
       <section className="relative text-center max-w-4xl mx-auto flex flex-col items-center justify-center px-4">
