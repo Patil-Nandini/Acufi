@@ -140,7 +140,7 @@ export default function HeroSection() {
                text-[14px] sm:text-[20px] lg:text-[18px] font-semibold text-white"
             >
               <span className="bg-gradient-to-r from-[#8EC9F2] to-[#8490FF] bg-clip-text text-transparent relative sm:bottom-[6px]">
-                When Banks Say No...We Say, Let's Talk!
+              When Banks Say No...We Say, Let&apos;s Talk!
               </span>
             </a>
           </div>
