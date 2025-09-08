@@ -217,7 +217,7 @@ export default function AcuCheck() {
             {historyItems.map((item) => (
               <div
                 key={item.label}
-                className="bg-[#123865] rounded-lg p-4 flex items-center gap-3 text-[16px] h-full"
+                className="bg-[#133D72] border border-[#29425E] rounded-lg p-4 flex items-center gap-3 text-[16px] h-full min-h-[70px]"
               >
                 <Image
                   src={`/${item.img}`}
