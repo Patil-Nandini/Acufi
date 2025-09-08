@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const faqs = [
@@ -141,25 +142,29 @@ export default function FaqSection() {
             <div className="text-[#181F2C] mb-4 text-xs sm:text-sm md:text-base">
               Can’t find the answer you’re looking for?
             </div>
-            <button
-              type="button"
-              className="flex items-center justify-center gap-2 w-48 sm:w-50 min-h-[60px] sm:min-h-[70px] text-white font-semibold text-sm sm:text-base"
-              style={{
-                backgroundImage: "url('/button-bg.webp')",
-                backgroundSize: "100% 100%",
-                backgroundRepeat: "no-repeat",
-              }}
-              aria-label="Get A Demo!"
-            >
-              <Image
-                src="/RocketIcon.png"
-                alt="Rocket Icon"
-                className="mb-6"
-                width={18}
-                height={18}
-              />
-              <span className="mb-6">Get Your Demo!</span>
-            </button>
+            <>
+              <Link href="https://acufi.com/lets-connect/">
+                <button
+                  type="button"
+                  className="flex items-center justify-center gap-2 w-48 sm:w-50 min-h-[60px] sm:min-h-[70px] text-white font-semibold text-sm sm:text-base cursor-pointer"
+                  style={{
+                    backgroundImage: "url('/button-bg.webp')",
+                    backgroundSize: "100% 100%",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                  aria-label="Get A Demo!"
+                >
+                  <Image
+                    src="/RocketIcon.png"
+                    alt="Rocket Icon"
+                    className="mb-6"
+                    width={18}
+                    height={18}
+                  />
+                  <span className="mb-6">Get Your Demo!</span>
+                </button>
+              </Link>
+            </>
           </div>
         </div>
       </div>

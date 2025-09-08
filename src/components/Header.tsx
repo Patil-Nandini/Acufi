@@ -21,7 +21,7 @@ export default function Header() {
     {
       name: "AcuView",
       desc: "Real-Time Loan Intelligence At Your Fingertips",
-      icon: "/AcuView.png",
+      icon: "/favicon-acuview.svg",
     },
     {
       name: "Verafi.me",
@@ -50,7 +50,7 @@ export default function Header() {
         </div>
  
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-8 text-white font-medium">
+        <nav className="hidden lg:flex space-x-8 text-white font-medium ">
           <div className="relative group">
             <button className="flex font-medium text-white font-semibold text-md  transition">
               Products
