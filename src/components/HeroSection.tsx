@@ -33,7 +33,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-20  gap-2 md:gap-12">
+      <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-20  gap-2 md:gap-[2] lg:gap-[2]">
         <div className="flex-1">
           <h1 className="text-[32px] md:text-[42px] font-bold leading-tight text-white uppercase">
             <span
@@ -45,6 +45,7 @@ export default function HeroSection() {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 padding: "20px 47px",
+                marginLeft:"-12px",
               }}
             >
               ACUFI
@@ -135,12 +136,12 @@ export default function HeroSection() {
                 className="
           absolute pointer-events-auto
          left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%]
-       top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[52%] xl:top-[52%]
-          w-[36%] sm:w-[62%] md:w-[58%] lg:w-[30%] xl:w-[30%]
-          text-white rounded-xl p-3 sm:p-3.5 md:p-4
+       top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[52%] xl:top-[53%]
+          w-[36%] sm:w-[62%] md:w-[33%] lg:w-[30%] xl:w-[30%]
+          text-white rounded-xl p-3 sm:p-3.5 md:p-2
         "
               >
-                <p className="font-semibold text-[6px] sm:text-[9px] md:text-[12px] lg:text-[10px] xl:text-[12px] leading-snug">
+                <p className="font-semibold text-[6px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
                   Get underwritten in 1–2 days
                 </p>
               </div>
@@ -150,12 +151,12 @@ export default function HeroSection() {
                 className="
           absolute pointer-events-auto
         left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%]
-        top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[67%] xl:top-[67%]
-          w-[48%] sm:w-[62%] md:w-[58%] lg:w-[40%] xl:w-[54%]
-          text-white rounded-xl p-3 sm:p-3.5 md:p-4
+        top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[67%] xl:top-[69%]
+          w-[48%] sm:w-[62%] md:w-[38%] lg:w-[40%] xl:w-[54%]
+          text-white rounded-xl p-3 sm:p-3.5 md:p-2
         "
               >
-                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[12px] lg:text-[10px] xl:text-[12px]  leading-snug">
+                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px]  leading-snug">
                   Full-service business banking
                 </p>
               </div>
@@ -164,13 +165,13 @@ export default function HeroSection() {
               <div
                 className="
           absolute pointer-events-auto
-        left-[6%]  sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%]
-        bottom-[7.8%]  sm:bottom-[10%] md:bottom-[10%] lg:bottom-[9%] xl:bottom-[8%]
+        left-[6%]  sm:left-[8%] md:left-[7%] lg:left-[7%] xl:left-[7%]
+        bottom-[7.8%]  sm:bottom-[10%] md:bottom-[9%] lg:bottom-[9%] xl:bottom-[8%]
           w-[66%] sm:w-[62%] md:w-[58%] lg:w-[56%] xl:w-[54%]
           text-white rounded-xl p-3 sm:p-3.5 md:p-4
         "
               >
-                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[12px] lg:text-[10px] xl:text-[12px]  leading-snug">
+                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px]  leading-snug">
                   Purpose-built tools for lending, cash flow, and payments
                 </p>
               </div>

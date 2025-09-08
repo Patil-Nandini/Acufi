@@ -44,6 +44,31 @@ export default function AcuPay() {
                 <span>Explore AcuPay in Action</span>
               </button>
             </Link>
+            <Link href="https://acufi.com/acucheck-get-started/">
+              <button
+                className="
+        relative overflow-hidden 
+        flex items-center justify-center gap-2 
+        px-6 py-7 sm:py-6 h-[72px] w-[255px]
+        text-white font-semibold
+         cursor-pointer
+      "
+              >
+                <span
+                  className="absolute inset-0 z-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('/AcuCheck2Bg.webp')" }}
+                />
+                <Image
+                  src="/RequestDemoWhite.svg"
+                  alt="Demo"
+                  width={20}
+                  height={20}
+                  className="relative"
+                />
+                <span className="relative">Request A Demo</span>
+                <span className="absolute top-[-6] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[50%] pointer-events-none" />
+              </button>
+            </Link>
           </div>
         </div>
 

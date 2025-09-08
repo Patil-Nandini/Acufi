@@ -1,18 +1,29 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BankingFeatureCard from "./BankingFeatureCard";
 import TechFeatureItem from "./TechFeatureItem";
 import Image from "next/image";
 
 export default function BankingPage() {
-  const [bgImage] = useState("/product-bg3.png");
+    const [bgImage, setBgImage] = useState("/product-bg3.png"); 
+  const [bgSize, setBgSize] = useState<"cover" | "contain">("cover");
 
-  // useEffect(() => {
-  //   if (window.innerWidth >= 768) {
-  //     setBgImage("/for-dev.png");
-  //   }
-  // }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 630) {
+       setBgImage("/for-dev.png"); 
+        setBgSize("contain");         
+      } else {
+        setBgImage("/product-bg3.png");
+        setBgSize("cover");            
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="bg-white sarabun w-full flex align-center justify-center mt-12">
       <div className=" w-full flex items-center justify-center flex-col">
@@ -20,7 +31,7 @@ export default function BankingPage() {
           <h1 className="text-4xl md:text-4xl font-bold text-[#0F1720] fontWeight-700">
             Banking That Understands Your Business
           </h1>
-          <p className="mt-6 text-[18px] text-[#0F1720] max-w-2xl mx-auto">
+          <p className="mt-6 text-[18px] text-[#0F1720]  mx-auto">
             <span className="font-semibold text-[#0F1720]">AcuFi</span> was born
             out of necessity, to serve industries the banking world refused to
             touch.
@@ -70,10 +81,10 @@ export default function BankingPage() {
         </section>
 
         <section
-          className="relative py-24 w-full bg-no-repeat bg-cover"
+          className="relative lg:py-24  w-full bg-no-repeat bg-cover"
           style={{
             backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover",
+             backgroundSize: bgSize,
             backgroundRepeat: "no-repeat",
           }}
         >

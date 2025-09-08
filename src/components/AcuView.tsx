@@ -34,7 +34,7 @@ export default function AcuView() {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col  sm:flex-row gap-2 mt-6">
+          {/* <div className="flex flex-col  sm:flex-row gap-2 mt-6">
             <button
               type="button"
               className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[240px] sm:w-[300px] px-7 sm:px-15px"
@@ -76,7 +76,51 @@ export default function AcuView() {
               />
               <span className="ml-2">See AcuView in Action</span>
             </button>
-          </div>
+          </div> */}
+          <div className="flex flex-wrap gap-3 mt-6 justify-center sm:justify-start">
+  <button
+    type="button"
+    className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[300px] px-7"
+    style={{
+      backgroundImage: "url('/AcuViewButtonBg.webp')",
+      backgroundSize: "100% 100%",
+      backgroundRepeat: "no-repeat",
+      paddingBottom: "25px",
+    }}
+    aria-label="Start Your Free 90-Day Trial"
+    onClick={() =>
+      (window.location.href = "https://acufi.com/acuview-get-started/")
+    }
+  >
+    <Image
+      src="/RocketIcon.png"
+      alt="Rocket Icon"
+      width={20}
+      height={20}
+    />
+    <span className="ml-2 whitespace-nowrap">
+      Start Your Free 90-Day Trial
+    </span>
+  </button>
+
+  <button
+    className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer"
+    onClick={() =>
+      (window.location.href = "https://acufi.com/lets-connect/")
+    }
+  >
+    <Image
+      src="/VideoIcon.png"
+      alt="Demo Icon"
+      width={25}
+      height={25}
+    />
+    <span className="ml-2 whitespace-nowrap">
+      See AcuView in Action
+    </span>
+  </button>
+</div>
+
         </div>
 
         {/* Right Illustration */}
@@ -197,7 +241,7 @@ export default function AcuView() {
           muted
           loop
           playsInline
-          className="hidden md:block w-[75%] rounded-[20px]"
+          className="hidden md:block w-[75%] md:w-[95%] lg:w-[75%] rounded-[20px]"
         >
           <source src="/AcuViewMatrix.webm" type="video/webm" />
         </video>
@@ -218,7 +262,7 @@ export default function AcuView() {
       flex flex-col md:flex-row justify-center items-center text-center
       gap-6 md:gap-10
       w-[60%] md:w-[65%] px-4 sm:px-0
-      max-[767px]:flex-col max-[767px]:gap-[122px] max-[767px]:max-w-[300px]
+      max-[767px]:flex-col max-[767px]:gap-[122px] md:gap-[73px] max-[767px]:max-w-[300px]
     "
         >
           {[

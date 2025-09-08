@@ -21,7 +21,10 @@ export default function AcufiBankVerification() {
           <p className="text-[18px] leading-relaxed">
             Prevent fraud and funding errors and approve with confidence.
             <br />
-            Acufi’s <span className="font-bold text-[18px]">Bank Verification</span>{" "}
+            Acufi’s{" "}
+            <span className="font-bold text-[18px]">
+              Bank Verification
+            </span>{" "}
             instantly confirms whether a bank account truly belongs to your
             applicant, before you disburse a single dollar.
           </p>
@@ -32,13 +35,19 @@ export default function AcufiBankVerification() {
               {
                 img: "/vector-icon.svg",
                 label: (
-                  <span className="font-bold underline ">866-711-4350</span>
+                  <a href="tel:8667114350" className="font-bold underline">
+                    866-711-4350
+                  </a>
                 ),
                 key: "866-711-4350",
               },
               {
                 img: "/email.svg",
-                label: "sales@acufi.com",
+                label: (
+                  <a href="mailto:sales@acufi.com" className="underline">
+                    sales@acufi.com
+                  </a>
+                ),
                 key: "sales@acufi.com",
               },
             ].map((item) => (
@@ -60,19 +69,19 @@ export default function AcufiBankVerification() {
 
           {/* Button */}
           <div className="flex flex-wrap gap-3 mt-6 ">
-             <Link href="https://acufi.com/acuview-get-started/">
-            <button
-              type="button"
-              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[52px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40] cursor-pointer"
-            >
-              <Image
-                src="/ExploreIcon.svg"
-                alt="Explore"
-                width={20}
-                height={20}
-              />
-              <span>Schedule Your Demo Today!</span>
-            </button>
+            <Link href="https://acufi.com/acuview-get-started/">
+              <button
+                type="button"
+                className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[52px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40] cursor-pointer"
+              >
+                <Image
+                  src="/ExploreIcon.svg"
+                  alt="Explore"
+                  width={20}
+                  height={20}
+                />
+                <span>Schedule Your Demo Today!</span>
+              </button>
             </Link>
           </div>
         </div>

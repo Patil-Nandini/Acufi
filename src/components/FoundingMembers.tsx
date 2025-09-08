@@ -201,7 +201,7 @@ export default function FoundingMembersPage() {
               alt="Setup Process"
               width={800}
               height={400}
-              className="mx-auto mb-4 hidden lg:block"
+              className="mx-auto mb-4 hidden md:block"
             />
 
             <Image
@@ -209,7 +209,7 @@ export default function FoundingMembersPage() {
               alt="Setup Process Mobile"
               width={400}
               height={300}
-              className="mx-auto mb-4 block lg:hidden"
+              className="mx-auto mb-4 block md:hidden"
             />
           </div>
 

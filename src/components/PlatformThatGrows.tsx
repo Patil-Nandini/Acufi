@@ -53,30 +53,34 @@ export default function Comparison() {
           </div>
 
           <div className="max-w-6xl mx-auto px-4 ml-0 xl:ml-[75px] lg:ml-[95px] ">
-            <div >
+            <div>
               {/* <table className="w-full border border-gray-200 overflow-hidden bg-white rounded-[30px]"> */}
-              <table className="w-[90%] lg:w-[100%] border border-gray-200 overflow-hidden bg-white rounded-[30px] ">
+              <table className="w-[90%] lg:w-[100%] border border-gray-200 overflow-hidden bg-white rounded-[30px]">
                 <thead
-                  className="text-white "
+                  className="text-white"
                   style={{
                     background:
                       "linear-gradient(90.37deg, #095ABB -4.45%, #0D86D4 103.35%)",
                   }}
                 >
                   <tr>
-                    <th className="w-1/4 py-4 px-18 text-left">Features</th>
-                    <th className="w-1/3 py-4 px-18 text-left">Acufi</th>
-                    <th className="w-1/3 py-4 px-18 text-left">
+                    <th className="w-1/4 md:w-[30%] py-4 px-4 md:px-6 text-left">
+                      Features
+                    </th>
+                    <th className="w-1/3 md:w-[35%] py-4 px-4 md:px-6 text-left">
+                      Acufi
+                    </th>
+                    <th className="w-1/3 md:w-[35%] py-4 px-4 md:px-6 text-left">
                       Traditional Banks
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#D4D4D8]">
                   <tr className="bg-[white]">
-                    <td className="py-4 px-18 text-[#37404C]">
+                    <td className="py-4 px-4 md:px-6 text-[#37404C]">
                       Account Setup Time
                     </td>
-                    <td className="py-4 px-18 text-green-600 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-green-600 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Frame-2147226778.svg"
@@ -88,7 +92,7 @@ export default function Comparison() {
                         1 - 3 Days
                       </div>
                     </td>
-                    <td className="py-4 px-18 text-red-500 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-red-500 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Icons.svg"
@@ -103,10 +107,10 @@ export default function Comparison() {
                   </tr>
 
                   <tr className="bg-[white]">
-                    <td className="py-4 px-18 text-[#37404C]">
+                    <td className="py-4 px-4 md:px-6 text-[#37404C]">
                       Credit Risk Insights
                     </td>
-                    <td className="py-4 px-18 text-green-600 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-green-600 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Frame-2147226778.svg"
@@ -118,7 +122,7 @@ export default function Comparison() {
                         Real-Time Cash Flow analysis + Loan Stacking
                       </div>
                     </td>
-                    <td className="py-4 px-18 text-red-500 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-red-500 font-medium">
                       <div className="flex items-start">
                         <Image
                           src="/Icons.svg"
@@ -133,11 +137,11 @@ export default function Comparison() {
                     </td>
                   </tr>
 
-                  <tr className="bg-[#white]">
-                    <td className="py-4 px-18 text-[#37404C]">
+                  <tr className="bg-[white]">
+                    <td className="py-4 px-4 md:px-6 text-[#37404C]">
                       Industry Support
                     </td>
-                    <td className="py-4 px-18 text-green-600 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-green-600 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Frame-2147226778.svg"
@@ -149,7 +153,7 @@ export default function Comparison() {
                         Short-term lending, Peptides, Cannabis, Crypto, etc.
                       </div>
                     </td>
-                    <td className="py-4 px-18 text-red-500 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-red-500 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Icons.svg"
@@ -164,10 +168,10 @@ export default function Comparison() {
                   </tr>
 
                   <tr className="bg-[white]">
-                    <td className="py-4 px-18  text-[#37404C]">
+                    <td className="py-4 px-4 md:px-6 text-[#37404C]">
                       Fraud Detection
                     </td>
-                    <td className="py-4 px-18 text-green-600 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-green-600 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Frame-2147226778.svg"
@@ -179,7 +183,7 @@ export default function Comparison() {
                         Behavioral + Warnings
                       </div>
                     </td>
-                    <td className="py-4 px-18 text-red-500 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-red-500 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Icons.svg"
@@ -194,10 +198,10 @@ export default function Comparison() {
                   </tr>
 
                   <tr className="bg-[white]">
-                    <td className="py-4 px-18 text-[#37404C]">
+                    <td className="py-4 px-4 md:px-6 text-[#37404C]">
                       Onboarding Experience
                     </td>
-                    <td className="py-4 px-18 text-green-600 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-green-600 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Frame-2147226778.svg"
@@ -209,7 +213,7 @@ export default function Comparison() {
                         100% Digital
                       </div>
                     </td>
-                    <td className="py-4 px-18 text-red-500 font-medium">
+                    <td className="py-4 px-4 md:px-6 text-red-500 font-medium">
                       <div className="flex items-center">
                         <Image
                           src="/Icons.svg"
@@ -317,27 +321,27 @@ export default function Comparison() {
         </div>
 
         <div className="mt-30">
-           <Link href="https://acufi.com/lets-connect/">
-          <button
-            type="button"
-            className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
-            style={{
-              backgroundImage: "url('/button-bg.webp')",
-              backgroundSize: "100% 100%",
-              backgroundRepeat: "no-repeat",
-              paddingBottom: "15px",
-            }}
-            aria-label="Get Started"
-          >
-            <Image
-              src="/RocketIcon.png"
-              alt="Rocket Icon"
-              width={20}
-              height={20}
-              className="mr-3"
-            />
-            <span>Get Started!</span>
-          </button>
+          <Link href="https://acufi.com/lets-connect/">
+            <button
+              type="button"
+              className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
+              style={{
+                backgroundImage: "url('/button-bg.webp')",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+                paddingBottom: "15px",
+              }}
+              aria-label="Get Started"
+            >
+              <Image
+                src="/RocketIcon.png"
+                alt="Rocket Icon"
+                width={20}
+                height={20}
+                className="mr-3"
+              />
+              <span>Get Started!</span>
+            </button>
           </Link>
         </div>
       </div>

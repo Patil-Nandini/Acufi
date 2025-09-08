@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#0B1C39] text-gray-300 px-6 md:px-12 py-12">
+      <footer className="bg-[#011634] text-gray-300 px-6 md:px-12 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
           <div className="flex flex-col items-center md:items-start justify-center">
             <Image
@@ -24,28 +24,28 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="underline">
                   Products
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link href="#" className="underline">
                   Acufi For Banking
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="#" className="underline">
+                <Link href="https://acufi.com/about-us/" className="underline">
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="underline">
                   Sign In
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="#" className="underline">
+                <Link href="https://acufi.com/contact/" className="underline">
                   Contact Us
                 </Link>
               </li>
@@ -56,23 +56,23 @@ export default function Footer() {
             <h3 className="font-semibold mb-3">Legal</h3>
             <ul className="space-y-2 mb-6">
               <li>
-                <Link href="#" className="underline">
+                <Link href="https://acufi.com/acufi-consumer-service-center/" className="underline">
                   Acufi Consumer Reporting Agency
                 </Link>
               </li>
               <li>
-                <Link href="#" className="underline">
+                <Link href="https://acufi.com/privacy-policy/" className="underline">
                   Privacy Policy
                 </Link>
               </li>
             </ul>
-            <h3 className="font-semibold mb-2">Newsletter Sign up</h3>
+            {/* <h3 className="font-semibold mb-2">Newsletter Sign up</h3>
             <p className="text-sm mb-2">
               Stay Updated on the Future of Neo Banking
             </p>
             <Link href="#" className="hover:underline text-sm">
               CTA — Subscribe Now!
-            </Link>
+            </Link> */}
           </div>
 
           <div>
@@ -83,23 +83,44 @@ export default function Footer() {
 
             <h3 className="font-semibold mt-6 mb-2">Follow us</h3>
             <div className="flex">
-              <Link href="#">
+              <Link
+                href="https://www.linkedin.com/company/acu-fi/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/LinkedInIcon.svg"
-                  alt="Linkedin"
+                  alt="LinkedIn"
                   width={66}
                   height={66}
                 />
               </Link>
-              <Link href="#">
+
+              <Link
+                href="https://x.com/acu_fi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
                   src="/Twitter.png"
-                  alt="Twitter"
+                  alt="X / Twitter"
                   width={66}
                   height={66}
                 />
               </Link>
-              <Image src="/youtube.png" alt="Youtube" width={66} height={66} />
+
+              <Link
+                href="https://www.youtube.com/@AcuFi_Official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/youtube.png"
+                  alt="YouTube"
+                  width={66}
+                  height={66}
+                />
+              </Link>
             </div>
           </div>
         </div>

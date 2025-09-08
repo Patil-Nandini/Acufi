@@ -67,7 +67,7 @@ export default function AcuCheck() {
         flex items-center justify-center gap-2 
         px-6 py-7 sm:py-6 h-[72px] w-[255px]
         text-white font-semibold
-        bg-[#0A2B5C] cursor-pointer
+         cursor-pointer
       "
               >
                 <span
@@ -190,11 +190,11 @@ export default function AcuCheck() {
           <h3 className="text-lg sm:text-xl font-medium mb-4">
             Bank Account Ownership
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-stretch">
             {items.map((item) => (
               <div
                 key={item.label}
-                className="bg-[#133D72] border border-[#29425E] rounded-lg p-4 flex items-center gap-3 text-[16px]"
+                className="bg-[#133D72] border border-[#29425E] rounded-lg p-4 flex items-center gap-3 text-[16px] h-full min-h-[70px]"
               >
                 <Image
                   src={`/${item.img}`}
@@ -213,11 +213,11 @@ export default function AcuCheck() {
           <h3 className="text-lg sm:text-xl font-medium mb-4">
             Bank Account History
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-stretch">
             {historyItems.map((item) => (
               <div
                 key={item.label}
-                className="bg-[#123865] rounded-lg p-4 flex items-center gap-3 text-[16px]"
+                className="bg-[#123865] rounded-lg p-4 flex items-center gap-3 text-[16px] h-full"
               >
                 <Image
                   src={`/${item.img}`}
