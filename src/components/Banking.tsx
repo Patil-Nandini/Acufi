@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BankingFeatureCard from "./BankingFeatureCard";
 import TechFeatureItem from "./TechFeatureItem";
+import Image from "next/image";
 
 export default function BankingPage() {
-  const [bgImage, setBgImage] = useState("/product-bg3.png");
+  const [bgImage] = useState("/product-bg3.png");
 
   // useEffect(() => {
   //   if (window.innerWidth >= 768) {
@@ -30,44 +31,43 @@ export default function BankingPage() {
           </p>
         </section>
 
-       <section className="mt-16 max-w-6xl mx-auto">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <BankingFeatureCard
-      title="1-2 Day Underwriting"
-      description="Fast account approval"
-      imageSrc="/Underwriting.png"
-      altText="Underwriting Illustration"
-    />
-    <BankingFeatureCard
-      title="Industry Expertise"
-      description={
-        <>
-          Specialized support for high-
-          <br />
-          risk industries with fraud <br />
-          prevention tools
-        </>
-      }
-      imageSrc="/GrowthTools.png"
-      altText="Industry Expertise Illustration"
-    />
-    <div className="sm:col-span-2 lg:col-span-1 flex justify-center">
-      <BankingFeatureCard
-        title="Growth Tools"
-        description={
-          <>
-            Predictive borrower scoring
-            <br /> and loan stacking
-            <br /> detection
-          </>
-        }
-        imageSrc="/Expertise.png"
-        altText="Growth Tools Illustration"
-      />
-    </div>
-  </div>
-</section>
-
+        <section className="mt-16 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <BankingFeatureCard
+              title="1-2 Day Underwriting"
+              description="Fast account approval"
+              imageSrc="/Underwriting.png"
+              altText="Underwriting Illustration"
+            />
+            <BankingFeatureCard
+              title="Industry Expertise"
+              description={
+                <>
+                  Specialized support for high-
+                  <br />
+                  risk industries with fraud <br />
+                  prevention tools
+                </>
+              }
+              imageSrc="/GrowthTools.png"
+              altText="Industry Expertise Illustration"
+            />
+            <div className="sm:col-span-2 lg:col-span-1 flex justify-center">
+              <BankingFeatureCard
+                title="Growth Tools"
+                description={
+                  <>
+                    Predictive borrower scoring
+                    <br /> and loan stacking
+                    <br /> detection
+                  </>
+                }
+                imageSrc="/Expertise.png"
+                altText="Growth Tools Illustration"
+              />
+            </div>
+          </div>
+        </section>
 
         <section
           className="relative py-24 w-full bg-no-repeat bg-cover"
@@ -85,20 +85,32 @@ export default function BankingPage() {
                   <br /> Your Business
                 </h1>
                 <p className="mt-4 text-lg text-[#0F1720]">
-                  Technology that traditional banks don't have.
+                  Technology that traditional banks don&apos;t have.
                 </p>
                 <div className="mt-10 space-y-7">
                   <TechFeatureItem
                     number={1}
                     icon={
-                      <img src="/One.png" alt="AcuCheck" className="w-8 h-8" />
+                      <Image
+                        src="/One.png"
+                        alt="AcuCheck"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
+                      />
                     }
                     name="AcuCheck"
                   />
                   <TechFeatureItem
                     number={2}
                     icon={
-                      <img src="/Two.png" alt="AcuView" className="w-8 h-8" />
+                      <Image
+                        src="/Two.png"
+                        alt="AcuView"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
+                      />
                     }
                     name="AcuView"
                     className="ml-0 md:ml-[100px]"
@@ -106,7 +118,13 @@ export default function BankingPage() {
                   <TechFeatureItem
                     number={3}
                     icon={
-                      <img src="/Three.png" alt="AcuPay" className="w-8 h-8" />
+                      <Image
+                        src="/Three.png"
+                        alt="AcuPay"
+                        width={32}
+                        height={32}
+                        className="w-8 h-8"
+                      />
                     }
                     name="AcuPay"
                   />

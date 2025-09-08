@@ -13,7 +13,6 @@ export default function AcuPay() {
         </h1>
       </div>
 
-  
       <div className="flex flex-col lg:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
         <div className="flex-[1.6] text-left ">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
@@ -24,9 +23,9 @@ export default function AcuPay() {
             and compliant payment solutions for industries that traditional
             processors avoid.
             <br />
-            Whether you're collecting payments, loan payments, or subscriptions,
-            AcuPay helps you get paid, stay compliant, and scale with
-            confidence.
+            Whether you&apos;re collecting payments, loan payments, or
+            subscriptions, AcuPay helps you get paid, stay compliant, and scale
+            with confidence.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6 justify-start ">
@@ -254,9 +253,11 @@ export default function AcuPay() {
                 key={item.label}
                 className="bg-[#133D72] border border-[#29425E] rounded-lg p-3 flex items-center gap-3 text-[16px]"
               >
-                <img
+                <Image
                   src={item.img}
                   alt={item.label}
+                  width={32}
+                  height={32}
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 {item.label}

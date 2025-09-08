@@ -1,4 +1,7 @@
 "use client";
+
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section className="relative w-full text-white font-sarabun overflow-hidden min-h-[700px] pt-10 ">
@@ -32,7 +35,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-20  gap-2 md:gap-12">
         <div className="flex-1">
-             <h1 className="text-[32px] md:text-[42px] font-bold leading-tight text-white uppercase">
+          <h1 className="text-[32px] md:text-[42px] font-bold leading-tight text-white uppercase">
             <span
               className="inline-block px-4 py-4 rounded-[60px] text-[35px] md:text-[35px] font-bold"
               style={{
@@ -143,9 +146,10 @@ export default function HeroSection() {
           </div>
 
           <p className="text-[18px] sm:text-[18px] text-gray-200 mb-1 max-w-[550px] weight-normal">
-            The Neo bank built for high-risk, high-growth businesses. We're not
-            afraid of industries that others call{" "}
-            <span className="font-bold text-white">"unbankable"</span>.<br />
+            The Neo bank built for high-risk, high-growth businesses. We&apos;re
+            not afraid of industries that others call{" "}
+            <span className="font-bold text-white">&quot;unbankable&quot;</span>
+            .<br />
             From short-term lending to peptides and cannabis to crypto,{" "}
             <span className="font-bold text-white">AcuFi</span> provides modern
             financial services designed for your business.
@@ -163,9 +167,11 @@ export default function HeroSection() {
 
               <div className="relative z-10 flex flex-col justify-center items-center h-full text-white p-4 transition-transform duration-300 ease-in-out group-hover:scale-[1.03] group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-[20px]">
                 <div className="flex justify-end w-full mr-4">
-                  <img
+                  <Image
                     src="https://acufi.com/images/Arrow1Icon.svg"
                     alt="Arrow Icon"
+                    width={35}
+                    height={35}
                     className="w-[35px] transition-transform duration-500 ease-in-out origin-center group-hover:-rotate-45"
                   />
                 </div>

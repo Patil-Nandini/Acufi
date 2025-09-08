@@ -91,13 +91,14 @@ const Testimonials = () => {
             What People Say About Us
           </h2>
           <p className="text-[18px] text-[#0F1720] mt-2">
-            Lenders Say It's Best
+            Lenders Say It&apos;s Best
           </p>
         </div>
 
         {/* Desktop / Mobile column layout */}
         {!isCarousel && (
-          <div style={{gap:"20px"}}
+          <div
+            style={{ gap: "20px" }}
             className={`flex flex-col w-full ${
               visibleCards === 3
                 ? "lg:flex-row lg:gap-6 lg:justify-center"
@@ -153,10 +154,12 @@ const Testimonials = () => {
                     style={{ width: "calc(50% - 12px)" }}
                   >
                     <div className="flex items-center gap-3 border-b border-[#eee] pb-3 min-h-[100px]">
-                      <img
+                      <Image
                         src={t.avatar}
                         alt={t.name}
-                        className="w-[60px] h-[60px]"
+                        width={60}
+                        height={60}
+                        className="w-[60px] h-[60px] rounded-full"
                       />
                       <div className="text-left">
                         <h4 className="text-[22px] font-semibold text-[#0F1720]">
@@ -180,10 +183,22 @@ const Testimonials = () => {
 
             <div className="absolute right-2 bottom-[-50px] flex gap-2">
               <button onClick={slidePrev}>
-                <img src="/BackwardIcon.svg" alt="Previous" className="w-10" />
+                <Image
+                  src="/BackwardIcon.svg"
+                  alt="Previous"
+                  width={40}
+                  height={40}
+                  className="w-10"
+                />
               </button>
               <button onClick={slideNext}>
-                <img src="/ForwardIcon.svg" alt="Next" className="w-10" />
+                <Image
+                  src="/ForwardIcon.svg"
+                  alt="Next"
+                  width={40}
+                  height={40}
+                  className="w-10"
+                />
               </button>
             </div>
           </div>
