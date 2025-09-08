@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Comparison() {
   return (
@@ -316,6 +317,7 @@ export default function Comparison() {
         </div>
 
         <div className="mt-30">
+           <Link href="https://acufi.com/lets-connect/">
           <button
             type="button"
             className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
@@ -325,7 +327,7 @@ export default function Comparison() {
               backgroundRepeat: "no-repeat",
               paddingBottom: "15px",
             }}
-            aria-label="Get A Demo"
+            aria-label="Get Started"
           >
             <Image
               src="/RocketIcon.png"
@@ -334,8 +336,9 @@ export default function Comparison() {
               height={20}
               className="mr-3"
             />
-            <span>Get A Demo!</span>
+            <span>Get Started!</span>
           </button>
+          </Link>
         </div>
       </div>
     </section>

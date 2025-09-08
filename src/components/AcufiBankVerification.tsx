@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AcufiBankVerification() {
   return (
@@ -58,10 +59,11 @@ export default function AcufiBankVerification() {
           </div>
 
           {/* Button */}
-          <div className="flex flex-wrap gap-3 mt-6">
+          <div className="flex flex-wrap gap-3 mt-6 ">
+             <Link href="https://acufi.com/acuview-get-started/">
             <button
               type="button"
-              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[52px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40]"
+              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[52px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40] cursor-pointer"
             >
               <Image
                 src="/ExploreIcon.svg"
@@ -71,6 +73,7 @@ export default function AcufiBankVerification() {
               />
               <span>Schedule Your Demo Today!</span>
             </button>
+            </Link>
           </div>
         </div>
 

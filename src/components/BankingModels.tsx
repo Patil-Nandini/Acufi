@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BankingModels = () => {
@@ -34,6 +35,7 @@ const BankingModels = () => {
           </p>
 
           <div className="mt-16 flex justify-center gap-4">
+             <Link href="https://acufi.com/lets-connect/">
             <button
               className="flex items-center gap-2 font-semibold py-3 px-8 transition-colors cursor-pointer"
               style={{
@@ -53,6 +55,7 @@ const BankingModels = () => {
               />
               Talk to Sales
             </button>
+            </Link>
           </div>
         </div>
       </section>

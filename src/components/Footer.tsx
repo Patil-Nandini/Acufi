@@ -85,7 +85,7 @@ export default function Footer() {
             <div className="flex">
               <Link href="#">
                 <Image
-                  src="/Linkedin.png"
+                  src="/LinkedInIcon.svg"
                   alt="Linkedin"
                   width={66}
                   height={66}

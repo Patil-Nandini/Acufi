@@ -2,11 +2,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
- 
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
- 
+
   const products = [
     {
       name: "AcuCheck",
@@ -34,7 +34,7 @@ export default function Header() {
       icon: "/Customer-Stories.png",
     },
   ];
- 
+
   return (
     <header className="w-full absolute top-0 left-0 z-20 border-b-[1px] border-b-[#636E76] bg-[rgba(255,255,255,0.1)]">
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
@@ -48,7 +48,7 @@ export default function Header() {
             priority
           />
         </div>
- 
+
         {/* Desktop Nav */}
         <nav className="hidden lg:flex space-x-8 text-white font-medium ">
           <div className="relative group">
@@ -70,7 +70,7 @@ export default function Header() {
             </button>
             {/* Dropdown */}
             <div className="border-[20px] border-[#C3E1FF] rounded absolute top-full mt-2.5 w-80 bg-white rounded-xl shadow-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm">
+              <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm ">
                 Products
               </h4>{" "}
               <ul className="space-y-4">
@@ -106,7 +106,7 @@ export default function Header() {
               </ul>{" "}
             </div>{" "}
           </div>
- 
+
           <span className="font-semibold text-md cursor-pointer">
             Use Cases
           </span>
@@ -118,10 +118,16 @@ export default function Header() {
           </span>
           <span className="font-semibold text-md cursor-pointer">Login</span>
         </nav>
- 
+
         {/* Desktop CTA */}
         <div className="hidden lg:block">
-          <button className="flex items-center space-x-2 px-5 py-2 border-2 border-white rounded-full text-white font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer">
+          <button
+            type="button"
+            onClick={() =>
+              (window.location.href = "https://acufi.com/lets-connect/")
+            }
+            className="flex items-center space-x-2 px-5 py-2 border-2 border-white rounded-full text-white font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer"
+          >
             <Image
               src="/RocketIcon.png"
               alt="Rocket Icon"
@@ -131,25 +137,25 @@ export default function Header() {
             <span>Get Started</span>
           </button>
         </div>
- 
+
         {/* Mobile Hamburger */}
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <X className="text-white w-7 h-7 cursor-pointer" />
             ) : (
-               <Image
-              src="/Hamburger.png"
-              alt="Rocket Icon"
-              width={40}
-              height={40}
-              className="cursor-pointer"
-            />
+              <Image
+                src="/Hamburger.png"
+                alt="Rocket Icon"
+                width={40}
+                height={40}
+                className="cursor-pointer"
+              />
             )}
           </button>
         </div>
       </div>
- 
+
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white shadow-lg px-6 py-4 space-y-4">
@@ -175,7 +181,7 @@ export default function Header() {
                 />
               </svg>
             </button>
- 
+
             {/* Mobile Products List */}
             {showProducts && (
               <ul className="mt-3 space-y-3">
@@ -205,13 +211,18 @@ export default function Header() {
               </ul>
             )}
           </div>
- 
+
           <span className="block font-semibold text-[#0F1720] ">Use Cases</span>
           <span className="block font-semibold text-[#0F1720]">Developer</span>
           <span className="block font-semibold text-[#0F1720]">Resources</span>
           <span className="block font-semibold text-[#0F1720]">Login</span>
- 
-          <button className="flex w-full justify-center items-center space-x-2 px-5 py-2 border-2 border-[#01459FCC] rounded-full text-[#01459FCC] font-medium shadow cursor-pointer">
+
+          <button
+            onClick={() =>
+              (window.location.href = "https://acufi.com/lets-connect/")
+            }
+            className="flex w-full justify-center items-center space-x-2 px-5 py-2 border-2 border-[#01459FCC] rounded-full text-[#01459FCC] font-medium shadow cursor-pointer"
+          >
             <Image
               src="/RocketIcon.png"
               alt="Rocket Icon"

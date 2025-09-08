@@ -47,6 +47,10 @@ export default function AcuView() {
                 // paddingRight: "15px",
               }}
               aria-label="Start Your Free 90-Day Trial"
+              onClick={() =>
+                (window.location.href =
+                  "https://acufi.com/acuview-get-started/")
+              }
             >
               <Image
                 src="/RocketIcon.png"
@@ -58,8 +62,11 @@ export default function AcuView() {
             </button>
 
             <button
-              className="flex items-center justify-center w-[230px] sm:w-[270px]  h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5"
+              className="flex items-center justify-center w-[230px] sm:w-[270px]  h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer"
               // style={{ height: "55px" }}
+              onClick={() =>
+                (window.location.href = "https://acufi.com/lets-connect/")
+              }
             >
               <Image
                 src="/VideoIcon.png"
@@ -231,7 +238,7 @@ export default function AcuView() {
               desc: "Insights Delivery Time",
             },
           ].map((stat, i) => (
-            <div 
+            <div
               key={i}
               className={`
     w-full md:w-[27%]

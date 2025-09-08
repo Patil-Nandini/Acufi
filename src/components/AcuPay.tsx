@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function AcuPay() {
@@ -29,50 +30,20 @@ export default function AcuPay() {
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6 justify-start ">
-            <button
-              type="button"
-              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[62px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40]"
-            >
-              <Image
-                src="/ExploreIcon.svg"
-                alt="Explore"
-                width={20}
-                height={20}
-              />
-              <span>Explore AcuCheck in Action</span>
-            </button>
-            <button
-              className="
-    relative overflow-hidden 
-    flex items-center justify-center gap-2 
-   px-6 py-7 sm:py-6 h-[72px] w-[255px]
-    text-white font-semibold
-    bg-[#0A2B5C]
-  "
-            >
-              <span
-                className="absolute inset-0 z-0 bg-cover bg-center"
-                style={{
-                  backgroundImage: "url('/AcuCheck2Bg.webp')",
-                }}
-              />
-
-              <Image
-                src="/RequestDemoWhite.svg"
-                alt="Demo"
-                width={20}
-                height={20}
-                className="relative z-10"
-              />
-              <span className="relative z-10">Request A Demo</span>
-
-              <span
-                className="absolute top-[-6] left-1/2 -translate-x-1/2 -translate-y-1/2
-      w-[100%] h-[50%]
-      pointer-events-none
-      z-10"
-              />
-            </button>
+            <Link href="https://acufi.com/under-renovation/">
+              <button
+                type="button"
+                className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[62px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40] cursor-pointer"
+              >
+                <Image
+                  src="/ExploreIcon.svg"
+                  alt="Explore"
+                  width={20}
+                  height={20}
+                />
+                <span>Explore AcuPay in Action</span>
+              </button>
+            </Link>
           </div>
         </div>
 
