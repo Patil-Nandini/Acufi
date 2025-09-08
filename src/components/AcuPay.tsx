@@ -101,23 +101,20 @@ export default function AcuPay() {
           <h3 className="font-semibold text-base sm:text-lg lg:text-sm xl:text-lg xl:pl-10  pl-10 lg:pl-8">
             ACH Processing
           </h3>
-          <ul className="flex flex-col gap-1 text-sm md:text-base xl:text-base lg:text-sm pl-10 xl:pl-8 lg:pl-6">
+          <ul className="flex flex-col gap-[20px] lg:gap-[25px] text-[14px] pl-10 xl:pl-8 lg:pl-6 font-sarabun">
             {[
               "Same-Day And Next-Day ACH Settlements",
               "Ideal For Recurring Payments And Loan Repayments",
               "Lower Fees Than Card Processing",
               "NACHA-Compliant Risk Monitoring",
             ].map((text, idx) => (
-              <li
-                key={idx}
-                className="flex items-center  gap-0 xl:gap-2 lg:pl-1"
-              >
+              <li key={idx} className="flex items-center gap-0 lg:pl-1">
                 <Image
                   src="/GreenCheckMarkIcon.svg"
                   alt="Check"
                   width={24}
                   height={24}
-                  className="w-6 h-6 "
+                  className="w-6 h-6"
                 />
                 <span className="leading-4 lg:leading-3.5 xl:leading-5 tracking-[-0.01em] pl-0.5">
                   {text}
@@ -155,7 +152,7 @@ export default function AcuPay() {
           <h3 className="font-semibold text-base sm:text-lg lg:text-sm  xl:text-lg xl:p-4 sm:pl-1 lg:pl-5 tracking-tighter">
             Credit & Debit Card Processing
           </h3>
-          <ul className="flex flex-col gap-2 lg:gap-1 xl:gap-2 text-sm md:text-base xl:text-base lg:text-sm lg:pl-4">
+          <ul className="flex flex-col  lg:gap-[25px] xl:gap-2 gap-[20px] lg:gap-[25px] text-[14px]  lg:pl-4 font-sarabun">
             {[
               "Accept All Major Card Brands",
               "Built-In Fraud Protection And <br/> Chargeback Mitigation",
@@ -164,16 +161,15 @@ export default function AcuPay() {
             ].map((feature, index) => (
               <li
                 key={index}
-                className="flex items-center  gap-0 xl:gap-2 lg:pl-1 xl:pl-3 sm:pl-0 pl-0"
+                className="flex items-start gap-0 xl:gap-2 lg:pl-1 xl:pl-3 sm:pl-0 pl-0"
               >
                 <Image
                   src="/GreenCheckMarkIcon.svg"
                   alt="Check"
                   width={24}
                   height={24}
-                  className="w-6 h-6 "
+                  className="w-6 h-6 flex-shrink-0"
                 />
-                {/* <span className="sm:leading-5 leading-4 tracking-tighter ">{feature}</span> */}
                 <span className="leading-4 lg:leading-3.5 xl:leading-5 tracking-[-0.01em] pl-0.5">
                   {feature.split(/<br\s*\/?>/i).map((part, i, arr) => (
                     <React.Fragment key={i}>

@@ -50,7 +50,7 @@ export default function Header() {
         </div>
  
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 text-white font-medium">
+        <nav className="hidden lg:flex space-x-8 text-white font-medium">
           <div className="relative group">
             <button className="flex font-medium text-white font-semibold text-md  transition">
               Products
@@ -120,7 +120,7 @@ export default function Header() {
         </nav>
  
         {/* Desktop CTA */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <button className="flex items-center space-x-2 px-5 py-2 border-2 border-white rounded-full text-white font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer">
             <Image
               src="/RocketIcon.png"
@@ -133,13 +133,13 @@ export default function Header() {
         </div>
  
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <X className="text-white w-7 h-7 cursor-pointer" />
             ) : (
                <Image
-              src="/primary button.svg"
+              src="/Hamburger.png"
               alt="Rocket Icon"
               width={40}
               height={40}
@@ -152,7 +152,7 @@ export default function Header() {
  
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg px-6 py-4 space-y-4">
+        <div className="lg:hidden bg-white shadow-lg px-6 py-4 space-y-4">
           <div>
             <button
               className="flex justify-between w-full text-[#0F1720] font-semibold cursor-pointer"

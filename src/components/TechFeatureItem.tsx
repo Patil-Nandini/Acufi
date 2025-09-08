@@ -34,7 +34,7 @@ const TechFeatureItem: React.FC<TechFeatureItemProps> = ({
   >
     <span className="absolute" style={{ top: "11px", right: "-6px" }}>
       <img
-        src="/curve.png"
+        src="/curve.svg"
         alt="Decorative curve"
         className="w-8 h-5"
       />
