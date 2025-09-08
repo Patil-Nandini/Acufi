@@ -28,9 +28,11 @@ export default function FoundingMembersPage() {
                       className="w-22 h-22"
                       aria-label="Flexible Integration Options icon"
                     >
-                      <img
+                      <Image
                         src="/Flexible-Integration-Options.svg"
                         alt="Flexible Integration Options icon"
+                        width={88}
+                        height={88}
                         className="w-22 h-22"
                       />
                     </object>
@@ -221,7 +223,7 @@ export default function FoundingMembersPage() {
               style={{ backgroundImage: "url('/SET-UP-PROCESS-bg.webp')" }}
             >
               <object
-                 className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
+                className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
                 type="image/svg+xml"
                 data="/step-up-process-1.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
@@ -248,7 +250,7 @@ export default function FoundingMembersPage() {
               style={{ backgroundImage: "url('/SET-UP-PROCESS-bg.webp')" }}
             >
               <object
-                  className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
+                className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
                 type="image/svg+xml"
                 data="https://acufi.com/images/step-up-process-2.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
