@@ -6,12 +6,12 @@ export default function Footer() {
     <>
       <footer className="bg-[#0B1C39] text-gray-300 px-6 md:px-12 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start justify-center">
             <Image
               src="/AcufiLogoFooter.png"
               alt="AcuFi Logo"
-              width={150}
-              height={54}
+              width={200}
+              height={60}
               className="object-contain"
             />
           </div>
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div className="text-center text-sm text-[#0000]-400 bg-white py-3">
+      <div className="text-center text-sm text-[#37404C] bg-white py-3">
         © 2025 All Rights Reserved
       </div>
     </>

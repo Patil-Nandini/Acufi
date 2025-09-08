@@ -16,22 +16,24 @@ import VerafiSection from "@/components/VerafiSection";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <HeroSection />
-      <BankingPage />
-      <AcuCheck />
-      <AcuView />
-      <AcuPay />
-      <VerafiSection />
-      <AcufiBankVerification />
-      <Comparison />
-      <Industries />
-      <Testimonials />
-      <FoundingMembersPage />
-      <BankingModels />
-      <FaqSection />
+    <main className="bg-white flex justify-center">
+      <div className="w-full max-w-[1920px]">
+        <Header />
+        <HeroSection />
+        <BankingPage />
+        <AcuCheck />
+        <AcuView />
+        <AcuPay />
+        <VerafiSection />
+        <AcufiBankVerification />
+        <Comparison />
+        <Industries />
+        <Testimonials />
+        <FoundingMembersPage />
+        <BankingModels />
+        <FaqSection />
         <Footer />
+      </div>
     </main>
   );
 }

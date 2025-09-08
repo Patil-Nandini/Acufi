@@ -3,19 +3,18 @@ import Image from "next/image";
 export default function FoundingMembersPage() {
   return (
     <div
-      className="bg-gray-50 font-sarabun text-gray-800 overflow-x-hidden w-full flex justify-center items-center bg-no-repeat bg-cover bg-center"
+      className="bg-gray-50 font-sarabun text-gray-800 overflow-x-hidden w-full flex justify-center items-center bg-no-repeat bg-cover bg-center w-[100%]"
       style={{
         backgroundImage: "url('/bg-founding-members.webp')",
       }}
     >
-      <div className="relative container mx-auto px-4 py-16 sm:py-24 w-[80%]">
-        {/* Section 1: Benefits */}
-        <section className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative container mx-auto px-4 py-16 sm:py-24 w-[80%] lg:w-[90%]  ">
+        <section className="relative grid grid-cols-1 xl:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-4xl md:text-4xl font-bold text-[#0F1720]-900">
-              Founding Member Benefits
+              Founding Member <br /> Benefits
             </h1>
-            <p className="mt-6 text-lg text-[#0F1720]-600">
+            <p className="mt-6 text-[18px] text-[#0F1720]-600">
               Join our exclusive founding member program and get priority access
               to all AcuFi features.
             </p>
@@ -41,7 +40,7 @@ export default function FoundingMembersPage() {
                   <h3 className="text-xl font-semibold text-gray-800">
                     Flexible Integration Options
                   </h3>
-                  <p className="mt-1 text-gray-600">
+                  <p className="mt-1 text-gray-600 text-[18px]">
                     Multiple API endpoints, webhooks, and integration methods to
                     fit seamlessly into your existing tech stack. Our
                     developer-friendly documentation makes implementation
@@ -72,7 +71,7 @@ export default function FoundingMembersPage() {
                   <h3 className="text-xl font-semibold text-gray-800">
                     Easy 3-Step Setup
                   </h3>
-                  <p className="mt-1 text-gray-600">
+                  <p className="mt-1 text-gray-600 text-[18px]">
                     Get started in minutes, not months. Our streamlined
                     onboarding process gets you from sign up to first
                     transaction in three simple steps with dedicated support
@@ -82,37 +81,44 @@ export default function FoundingMembersPage() {
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-center w-full">
+          <div className="flex justify-center xl:justify-end items-center w-full">
             <Image
               src="/Maskgroup.webp"
               alt="Cash flow is the new credit score illustration"
               width={1200}
               height={800}
-              className="w-[85%] h-auto"
+              className="w-[85%] h-auto lg:w-[60%] xl:w-[85%]"
             />
           </div>
         </section>
 
-        <section className="mt-24 sm:mt-32 text-center">
+        {/* <section className="mt-24 sm:mt-32 text-center mw-[100px]">
           <div className="max-w-4xl mx-auto">
             <Image
               src="/SET-UP-PROCESS.webp"
               alt="Setup Process"
               width={800}
               height={400}
-              className="mx-auto mb-2"
+              className="mx-auto mb-2 hidden md:block"
+            />
+            <Image
+              src="/SET-UP-PROCESS-Mobile.webp"
+              alt="Setup Process Mobile"
+              width={300}
+              height={300}
+              className="mx-auto mb-2 block md:hidden"
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="md:grid-cols- gap-4 max-w-6xl mx-auto flex flex-col justify-center items-center md:flex-row ">
             <div
-              className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
+              className="relative p-3 md:p-8 lg:p-[2] flex flex-col items-center text-center bg-cover bg-center w-[239px] h-[180px] lg:h-[290px] lg:h-[222px]"
               style={{
                 backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
               <object
-                className="w-26 h-26 mb-4"
+                className="w-20 h-20 md:w-[26] md:h-[26] mb-1 md:mb-4"
                 type="image/svg+xml"
                 data="/step-up-process-1.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
@@ -122,7 +128,7 @@ export default function FoundingMembersPage() {
                   alt="Step 1"
                   width={64}
                   height={64}
-                  className="mb-4"
+                  className="mb-4 w-16 h-16 lg:w-12 lg:h-12"
                 />
               </object>
               <h4 className="text-md font-semibold text-black">STEP 1</h4>
@@ -132,13 +138,13 @@ export default function FoundingMembersPage() {
             </div>
 
             <div
-              className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
+              className="relative p-3 md:p-8 lg:p-[2] flex flex-col items-center text-center bg-cover bg-center w-[239px] h-[180px] lg:h-[290px] lg:h-[222px]"
               style={{
                 backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
               <object
-                className="w-26 h-26 mb-4"
+                className="w-20 h-20 md:w-[26] md:h-[26] mb-1 md:mb-4"
                 type="image/svg+xml"
                 data="https://acufi.com/images/step-up-process-2.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
@@ -158,13 +164,14 @@ export default function FoundingMembersPage() {
             </div>
 
             <div
-              className="relative p-8 flex flex-col items-center text-center bg-cover bg-center"
+              className="relative p-3 md:p-8 lg:p-[2] flex flex-col items-center text-center bg-cover bg-center w-[239px] h-[180px] lg:h-[290px] lg:h-[222px]"
               style={{
                 backgroundImage: "url('/SET-UP-PROCESS-bg.webp')",
               }}
             >
+              {" "}
               <object
-                className="w-26 h-26 mb-4"
+                className="w-20 h-20 md:w-[26] md:h-[26] mb-1 md:mb-4"
                 type="image/svg+xml"
                 data="https://acufi.com/images/step-up-process-3.svg"
                 aria-label="Step 1: Account Creation & Verification icon"
@@ -179,6 +186,110 @@ export default function FoundingMembersPage() {
               </object>
               <h4 className="text-md font-semibold text-black">STEP 3</h4>
               <h4 className="mt-2 font-semibold text-[#0F1720B2]">
+                GO LIVE & START GROWING
+              </h4>
+            </div>
+          </div>
+        </section> */}
+
+        <section className="mt-24 sm:mt-32 text-center">
+          <div className="max-w-4xl mx-auto">
+            <Image
+              src="/SET-UP-PROCESS.webp"
+              alt="Setup Process"
+              width={800}
+              height={400}
+              className="mx-auto mb-4 hidden lg:block"
+            />
+
+            <Image
+              src="/SET-UP-PROCESS-Mobile.webp"
+              alt="Setup Process Mobile"
+              width={400}
+              height={300}
+              className="mx-auto mb-4 block lg:hidden"
+            />
+          </div>
+
+          {/* Steps Grid */}
+          <div className="gap-6 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 place-items-center md:gap-[176px]">
+            {/* STEP 1 */}
+            <div
+              className="relative p-4 md:p-6 flex flex-col items-center text-center bg-cover bg-center 
+                 w-[300px] h-[220px] sm:w-[320px] sm:h-[240px]  md:w-[240px] md:h-[180px] lg:w-[290px] lg:h-[220px]   xl:w-[320px] xl:h-[240px]
+                 rounded-xl"
+              style={{ backgroundImage: "url('/SET-UP-PROCESS-bg.webp')" }}
+            >
+              <object
+                 className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
+                type="image/svg+xml"
+                data="/step-up-process-1.svg"
+                aria-label="Step 1: Account Creation & Verification icon"
+              >
+                <Image
+                  src="/step-up-process-1.svg"
+                  alt="Step 1"
+                  width={64}
+                  height={64}
+                  className="mb-4 w-16 h-16 lg:w-12 lg:h-12"
+                />
+              </object>
+              <h4 className="text-base font-semibold text-black">STEP 1</h4>
+              <h4 className="mt-2 font-semibold text-[#0F1720B2] text-[14px] md:text-[14px] xl:text-[16px]">
+                ACCOUNT CREATION & VERIFICATION
+              </h4>
+            </div>
+
+            {/* STEP 2 */}
+            <div
+              className="relative p-4 md:p-6 flex flex-col items-center text-center bg-cover bg-center 
+                 w-[300px] h-[220px] sm:w-[320px] sm:h-[240px] md:w-[240px] md:h-[180px] lg:w-[290px] lg:h-[220px]   xl:w-[320px] xl:h-[240px]
+                 rounded-xl"
+              style={{ backgroundImage: "url('/SET-UP-PROCESS-bg.webp')" }}
+            >
+              <object
+                  className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
+                type="image/svg+xml"
+                data="https://acufi.com/images/step-up-process-2.svg"
+                aria-label="Step 1: Account Creation & Verification icon"
+              >
+                <Image
+                  src="/step-up-process-2.svg"
+                  alt="Step 2"
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+              </object>
+              <h4 className="text-base font-semibold text-black">STEP 2</h4>
+              <h4 className="mt-2 font-semibold text-[#0F1720B2] text-[14px] md:text-[14px] xl:text-[16px]">
+                API INTEGRATION & TESTING
+              </h4>
+            </div>
+
+            {/* STEP 3 */}
+            <div
+              className="relative p-4 md:p-6 flex flex-col items-center text-center bg-cover bg-center 
+                w-[300px] h-[220px] sm:w-[320px] sm:h-[240px] md:w-[240px] md:h-[180px] lg:w-[290px] lg:h-[220px]   xl:w-[320px] xl:h-[240px]
+                 rounded-xl"
+              style={{ backgroundImage: "url('/SET-UP-PROCESS-bg.webp')" }}
+            >
+              <object
+                className="w-20 h-20 md:w-[60] md:h-[60] lg:w-[100] lg:h-[100] mt-2  mb-1 md:mb-1 md:mt-0"
+                type="image/svg+xml"
+                data="https://acufi.com/images/step-up-process-3.svg"
+                aria-label="Step 1: Account Creation & Verification icon"
+              >
+                <Image
+                  src="/step-up-process-3.svg"
+                  alt="Step 3"
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+              </object>
+              <h4 className="text-base font-semibold text-black">STEP 3</h4>
+              <h4 className="mt-2 font-semibold text-[#0F1720B2] text-[14px] md:text-[14px] xl:text-[16px]">
                 GO LIVE & START GROWING
               </h4>
             </div>

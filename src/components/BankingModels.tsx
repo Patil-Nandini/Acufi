@@ -15,17 +15,14 @@ const BankingModels = () => {
         <object
           type="image/svg+xml"
           data="/Ready-to-break.svg"
-          style={{ width: "80%" }}
           aria-label="Ready to Break"
-        >
-          Ready to Break
-        </object>
+          className="w-full sm:w-4/5"
+        />
 
         <div
-          className="relative flex flex-col w-full max-w-5xl items-center bg-no-repeat bg-center bg-cover"
+          className="relative flex flex-col w-full max-w-5xl items-center bg-no-repeat bg-center bg-cover opacity-89 min-h-0 sm:min-h-[500px]"
           style={{
             backgroundImage: "url('/layout-webp.webp')",
-            minHeight: "500px",
           }}
         >
           <h2 className="text-4xl md:text-4xl font-bold text-[#0F1720]-900 mt-8">

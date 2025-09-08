@@ -1,19 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import React from "react";
 
 export default function AcuPay() {
   return (
-    <div className="font-sarabun bg-[#001334] pb-10 w-[100%] flex flex-col items-center justify-center">
-      <div className="bg-[#001334] py-12">
-        <h1 className="text-center font-bold text-white text-4xl">AcuPay</h1>
+    <div className="font-sarabun bg-[#001334] pb-10 w-full flex flex-col items-center justify-center ">
+      {/* Title */}
+      <div className="py-10 sm:py-12">
+        <h1 className="text-center font-bold text-white text-2xl sm:text-3xl md:text-4xl">
+          AcuPay
+        </h1>
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-between bg-[#0B2D58] px-10 text-white rounded-t-[14px] mx-[20px] lg:mx-[50px] w-[80%]">
-        <div className="flex-1 min-w-[55%]">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            Modern Payment Processing… Built for High-Risk Businesses 
+
+  
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
+        <div className="flex-[1.6] text-left ">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
+            Modern Payment Processing… Built for High-Risk Businesses
           </h2>
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed">
             <span className="font-bold">AcuPay</span> delivers fast, flexible,
             and compliant payment solutions for industries that traditional
             processors avoid.
@@ -23,186 +29,172 @@ export default function AcuPay() {
             confidence.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-6">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 mt-6 justify-start ">
             <button
               type="button"
-              className="flex items-center gap-2 bg-white text-[#4976E7] px-5 py-2 rounded-full font-bold shadow cursor-pointer"
+              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[62px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40]"
             >
               <Image
                 src="/ExploreIcon.svg"
-                alt="Explore AcuCheck Icon"
+                alt="Explore"
                 width={20}
                 height={20}
-                className="w-5 h-5"
               />
-              <span className="ml-2">Explore AcuCheck in Action</span>
+              <span>Explore AcuCheck in Action</span>
             </button>
             <button
-              type="button"
-              className="flex items-center gap-2 border-2 border-white px-5 py-2 rounded-full text-white shadow cursor-pointer"
+              className="
+    relative overflow-hidden 
+    flex items-center justify-center gap-2 
+   px-6 py-7 sm:py-6 h-[72px] w-[255px]
+    text-white font-semibold
+    bg-[#0A2B5C]
+  "
             >
+              <span
+                className="absolute inset-0 z-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: "url('/AcuCheck2Bg.webp')",
+                }}
+              />
+
               <Image
                 src="/RequestDemoWhite.svg"
-                alt="Request Demo Icon"
+                alt="Demo"
                 width={20}
                 height={20}
-                className="w-5 h-5"
+                className="relative z-10"
               />
-              Request A Demo
+              <span className="relative z-10">Request A Demo</span>
+
+              <span
+                className="absolute top-[-6] left-1/2 -translate-x-1/2 -translate-y-1/2
+      w-[100%] h-[50%]
+      pointer-events-none
+      z-10"
+              />
             </button>
           </div>
         </div>
-        <div className="flex-1 w-[70%] md:w-[50%] mt-6 md:mt-0 flex justify-center md:mt-6">
+
+        {/* Image */}
+        <div className="flex-1 flex justify-center lg:justify-end w-[100%]">
           <object
             type="image/svg+xml"
             data="/Modern-payment-processing-New.svg"
-            className="w-[80%] md:w-full h-auto max-w-[550px]"
+            className="w-[80%] sm:w-[70%] md:w-full h-auto max-w-[500px]"
             aria-label="Modern-payment-processing"
           >
             Modern-payment-processing
           </object>
         </div>
       </div>
-      {/* <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
-        <div
-          className="relative flex-1 flex items-center justify-center"
-          style={{ minWidth: "340px", maxWidth: "410px", height: "380px" }}
-        >
-          <div
-            className="relative bg-transparent rounded-[28px] w-full h-full overflow-hidden transform -rotate-3"
-            style={{
-              backgroundImage: "url('/ACH-Processing-bg.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 flex flex-col justify-start items-start p-8 transform rotate-3">
-              <h3 className="text-white font-bold text-2xl mb-5">
-                ACH Processing
-              </h3>
-              <ul className="flex flex-col gap-4 text-white text-base font-normal">
-                {[
-                  "Same-Day And Next-Day ACH Settlements",
-                  "Ideal For Recurring Payments And Loan Repayments",
-                  "Lower Fees Than Card Processing",
-                  "NACHA-Compliant Risk Monitoring",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Image
-                      src="/GreenCheckMarkIcon.svg"
-                      alt="Check"
-                      width={24}
-                      height={24}
-                      className="w-6 h-6 mt-1"
-                    />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div className="flex items-center justify-center mx-4 w-[5%]">
-          <object
-            type="image/svg+xml"
-            data="/pin.svg"
-            className="w-[180px] h-[180px]"
-            aria-label="Payment Connectivity"
-          >
-            Payment Connectivity Icon
-          </object>
-        </div>
-
+      <div className="relative bg-[#0B2D58] px-4 sm:px-8 md:px-10 py-6 flex flex-col lg:flex-row items-center w-full lg:w-[85%] justify-between gap-0">
         <div
-          className="relative flex-1 flex items-center justify-center"
-          style={{ minWidth: "340px", maxWidth: "410px", height: "380px" }}
-        >
-          <div
-            className="relative bg-transparent rounded-[28px] w-full h-full overflow-hidden transform rotate-3"
-            style={{
-              backgroundImage: "url('/Credit-Debit-Card-Processing.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 flex flex-col justify-end items-start p-8 transform -rotate-3">
-              <h3 className="text-white font-bold text-2xl mb-5">
-                Credit & Debit Card Processing
-              </h3>
-              <ul className="flex flex-col gap-4 text-white text-base font-normal">
-                {[
-                  "Accept All Major Card Brands",
-                  "Built-In Fraud Protection And Chargeback Mitigation",
-                  "Fast, Secure Digital Checkout Experiences",
-                  "Supports High Volume And High-Ticket Transactions",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Image
-                      src="/GreenCheckMarkIcon.svg"
-                      alt="Check"
-                      width={24}
-                      height={24}
-                      className="w-6 h-6 mt-1"
-                    />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div> */}
- 
-      <div className="relative bg-[#0B2D58] px-10 pb-5 flex items-center w-[80%] justify-between">
-
-        <div
-          className="transform -rotate-3  w-[400px] h-[400] p-9 pl-18 pr-10 rounded-xl text-[#FFFFFF] flex flex-col gap-3 relative z-10"
+          className="lg:-rotate-10 w-[345] sm:w-[350px] h-[333px] sm:h-[350px] lg:w-[550px] xl:w-[350px] p-6 sm:p-8 rounded-xl text-white flex flex-col gap-2 relative z-10"
           style={{
             backgroundImage: "url('/ACH-Processing-bg.webp')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h3 className="font-semibold text-lg">ACH Processing</h3>
-          <ul className="flex flex-col gap-4">
-            <li>✅ Same-Day And Next-Day ACH Settlements</li>
-            <li>✅ Ideal For Recurring Payments And Loan Repayments</li>
-            <li>✅ Lower Fees Than Card Processing</li>
-            <li>✅ NACHA-Compliant Risk Monitoring</li>
+          <h3 className="font-semibold text-base sm:text-lg lg:text-sm xl:text-lg xl:pl-10  pl-10 lg:pl-8">
+            ACH Processing
+          </h3>
+          <ul className="flex flex-col gap-1 text-sm md:text-base xl:text-base lg:text-sm pl-10 xl:pl-8 lg:pl-6">
+            {[
+              "Same-Day And Next-Day ACH Settlements",
+              "Ideal For Recurring Payments And Loan Repayments",
+              "Lower Fees Than Card Processing",
+              "NACHA-Compliant Risk Monitoring",
+            ].map((text, idx) => (
+              <li
+                key={idx}
+                className="flex items-center  gap-0 xl:gap-2 lg:pl-1"
+              >
+                <Image
+                  src="/GreenCheckMarkIcon.svg"
+                  alt="Check"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6 "
+                />
+                <span className="leading-4 lg:leading-3.5 xl:leading-5 tracking-[-0.01em] pl-0.5">
+                  {text}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
-        <object
-          type="image/svg+xml"
-          data="/pin.svg"
-          className="w-[300px] h-[200px]"
-          aria-label="Payment Connectivity"
+
+        <div>
+          <object
+            type="image/svg+xml"
+            data="/ACH-processing-Vertical-for-Mobile.svg"
+            className="w-[180px] h-[140px] sm:w-[250px] sm:h-[200px] lg:hidden"
+            aria-label="Payment Connectivity Mobile"
+          />
+          <object
+            type="image/svg+xml"
+            data="/pin.svg"
+            className="hidden lg:block w-[350px] h-[250px] lg:w-[160px] lg:h-[200px] xl:w-[400px] xl:h-[300px]"
+            aria-label="Payment Connectivity Desktop"
+          />
+        </div>
+
+        {/* Card 2 */}
+        <div
+          className="lg:rotate-10 w-[345px] sm:w-[350px] h-[333px] sm:h-[350px] lg:w-[600px] xl:w-[350px]
+          p-10 sm:p-8 lg:p-4 xl:p-4 rounded-xl text-white flex flex-col gap-2 relative z-10"
+          style={{
+            backgroundImage: "url('/Credit-Debit-Card-Processing.webp')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          Payment Connectivity Icon
-        </object>
-        <div className="transform rotate-3  w-[400px] h-[400] p-9 pl-10 pr-15 rounded-xl text-[#FFFFFF] flex flex-col gap-3 relative z-10 ml-[-50px]"  style={{
-              backgroundImage: "url('/Credit-Debit-Card-Processing.webp')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}>
-          <h3 className="font-semibold text-lg">
+          <h3 className="font-semibold text-base sm:text-lg lg:text-sm  xl:text-lg xl:p-4 sm:pl-1 lg:pl-5 tracking-tighter">
             Credit & Debit Card Processing
           </h3>
-          <ul className="flex flex-col gap-4">
-            <li>✅ Accept All Major Card Brands</li>
-            <li>✅ Built-In Fraud Protection And Chargeback Mitigation</li>
-            <li>✅ Fast, Secure Digital Checkout Experiences</li>
-            <li>✅ Supports High Volume And High-Ticket Transactions</li>
+          <ul className="flex flex-col gap-2 lg:gap-1 xl:gap-2 text-sm md:text-base xl:text-base lg:text-sm lg:pl-4">
+            {[
+              "Accept All Major Card Brands",
+              "Built-In Fraud Protection And <br/> Chargeback Mitigation",
+              "Fast, Secure Digital Checkout<br/> Experiences",
+              "Supports High Volume And <br/>High-Ticket Transactions",
+            ].map((feature, index) => (
+              <li
+                key={index}
+                className="flex items-center  gap-0 xl:gap-2 lg:pl-1 xl:pl-3 sm:pl-0 pl-0"
+              >
+                <Image
+                  src="/GreenCheckMarkIcon.svg"
+                  alt="Check"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6 "
+                />
+                {/* <span className="sm:leading-5 leading-4 tracking-tighter ">{feature}</span> */}
+                <span className="leading-4 lg:leading-3.5 xl:leading-5 tracking-[-0.01em] pl-0.5">
+                  {feature.split(/<br\s*\/?>/i).map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      {part.trim()}
+                      {i < arr.length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-2 mt-2 text-white mx-5 lg:mx-[50px] w-[80%] justify-center ">
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5 rounded-b-[14px]">
-          <h3 className="text-xl md:text-2xl font-semibold mb-6">
+      <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 sm:mx-10 lg:mx-20 w-full lg:w-[85%]">
+        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-6 rounded-b-[14px]">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
             Why AcuPay Works For You
           </h3>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-3 text-sm sm:text-base">
             {[
               {
                 text: "Built for high-risk industries like short-term lending, cannabis, and nutraceuticals",
@@ -221,19 +213,29 @@ export default function AcuPay() {
                 icon: "/Backed-by-AcuFis-bank-grade-security-and-compliance-infrastructure.svg",
               },
             ].map((item) => (
-              <li key={item.text} className="flex items-center gap-3 text-lg">
-                <img src={item.icon} alt="Feature Icon" className="w-6 h-6" />
+              <li
+                key={item.text}
+                className="flex items-start gap-2 sm:gap-3 text-[16px]"
+              >
+                <Image
+                  src={item.icon}
+                  alt="Feature Icon"
+                  width={30}
+                  height={30}
+                  className="w-[30px] h-[30px] mr-2"
+                />
                 {item.text}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5 rounded-b-[14px]">
-          <h3 className="text-xl md:text-2xl font-semibold mb-6">
+        {/* Right Box */}
+        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-6 rounded-b-[14px]">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
             Membership & Subscription Billing
           </h3>
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-3 text-sm sm:text-base">
             {[
               {
                 img: "/Automate-monthly-recurring-payments.svg",
@@ -250,9 +252,13 @@ export default function AcuPay() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-[#133D72] border border-[#29425E] rounded-lg p-2 flex items-center gap-3 text-sm md:text-base"
+                className="bg-[#133D72] border border-[#29425E] rounded-lg p-3 flex items-center gap-3 text-[16px]"
               >
-                <img src={item.img} alt={item.label} className="w-8 h-8" />
+                <img
+                  src={item.img}
+                  alt={item.label}
+                  className="w-6 h-6 sm:w-8 sm:h-8"
+                />
                 {item.label}
               </div>
             ))}

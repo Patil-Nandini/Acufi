@@ -4,22 +4,23 @@ import Image from "next/image";
 
 export default function AcufiBankVerification() {
   return (
-    <div className="font-sarabun bg-[#001334] pb-10 w-[100%] flex flex-col items-center justify-center">
-      <div className="bg-[#001334] py-12">
-        <h1 className="text-center font-bold text-white text-4xl">
-           AcuFi Bank Verification
+    <div className="font-sarabun bg-[#001334] pb-10 w-full flex flex-col items-center justify-center">
+      <div className="bg-[#001334] py-8 md:py-12 px-4">
+        <h1 className="text-center font-bold text-white text-2xl sm:text-3xl md:text-4xl">
+          AcuFi Bank Verification
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-between bg-[#0B2D58] px-10 text-white rounded-t-[14px] mx-[20px] lg:mx-[50px] w-[80%]">
-        <div className="flex-1 min-w-[55%]">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+
+      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-between bg-[#0B2D58] px-6 sm:px-10 text-white rounded-t-[14px] mx-4 md:mx-8 lg:mx-[50px] w-[95%] lg:w-[85%] py-8 md:py-10 xl:py-12">
+        <div className="flex-1 min-w-[280px] max-w-full lg:min-w-[55%]">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Verify Bank Account Ownership In Seconds
           </h2>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-[18px] leading-relaxed">
             Prevent fraud and funding errors and approve with confidence.
             <br />
-            Acufi’s <span className="font-bold">Bank Verification</span>{" "}
+            Acufi’s <span className="font-bold text-[18px]">Bank Verification</span>{" "}
             instantly confirms whether a bank account truly belongs to your
             applicant, before you disburse a single dollar.
           </p>
@@ -30,7 +31,7 @@ export default function AcufiBankVerification() {
               {
                 img: "/vector-icon.svg",
                 label: (
-                  <span className="font-bold underline">866-711-4350</span>
+                  <span className="font-bold underline ">866-711-4350</span>
                 ),
                 key: "866-711-4350",
               },
@@ -42,14 +43,14 @@ export default function AcufiBankVerification() {
             ].map((item) => (
               <div
                 key={item.key}
-                className="bg-[#133D72] border border-[#FFFFFF1A] rounded-lg p-2 flex items-center gap-3 text-sm md:text-base backdrop-blur-[16px] shadow-[0_4px_16px_0_#062A5829]"
+                className="bg-[#133D72] border border-[#FFFFFF1A] rounded-lg p-3 flex items-center gap-3 text-sm sm:text-base backdrop-blur-[16px] shadow-[0_4px_16px_0_#062A5829]"
               >
                 <Image
                   src={item.img}
                   alt={typeof item.label === "string" ? item.label : item.key}
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
+                  width={28}
+                  height={28}
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 {item.label}
               </div>
@@ -57,39 +58,42 @@ export default function AcufiBankVerification() {
           </div>
 
           {/* Button */}
-          <div className="flex flex-wrap gap-4 mt-6">
+          <div className="flex flex-wrap gap-3 mt-6">
             <button
               type="button"
-              className="flex items-center gap-2 bg-white text-[#4976E7] px-5 py-2 rounded-full font-bold shadow cursor-pointer"
+              className=" flex items-center justify-center gap-2 bg-white text-blue-600 px-5 py-1 h-[52px] w-[268px] rounded-full font-bold shadow-[0px_4px_4px_0px_#FFFFFF40]"
             >
               <Image
                 src="/ExploreIcon.svg"
-                alt="Explore AcuCheck"
+                alt="Explore"
                 width={20}
                 height={20}
-                className="w-5 h-5"
               />
-              <span className="ml-2">Explore AcuCheck in Action</span>
+              <span>Schedule Your Demo Today!</span>
             </button>
           </div>
         </div>
-        <div className="flex-1 w-[70%] md:w-[50%] mt-6 md:mt-0 flex justify-center md:mt-6">
+
+        {/* Right Section - Illustration */}
+        <div className="flex-1 w-[90%] sm:w-[70%] md:w-[50%] mt-6 lg:mt-0 flex justify-center">
           <object
             type="image/svg+xml"
             data="/Bank-verification.svg"
             className="w-[80%] md:w-full h-auto max-w-[420px]"
-            aria-label=" AcuFi Bank Verification"
+            aria-label="AcuFi Bank Verification"
           >
-             AcuFi Bank Verification
+            AcuFi Bank Verification
           </object>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-2 mt-2 text-white mx-5 lg:mx-[50px] w-[80%] justify-center  ">
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5 rounded-b-[14px]">
-          <h3 className="text-xl md:text-2xl font-semibold mb-6">
+
+      {/* Bottom Section */}
+      <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 md:mx-8 lg:mx-[50px] w-[95%] lg:w-[85%] justify-center">
+        {/* What You Get */}
+        <div className="w-full bg-[#0B2D58] p-4 sm:p-5 xl:rounded-b-[14px] xl:w-1/2 ">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
             What You Get
           </h3>
-
           <div className="grid grid-cols-1 gap-4">
             {[
               {
@@ -107,14 +111,14 @@ export default function AcufiBankVerification() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-[#133D72] border border-[#29425E] rounded-lg p-2 flex items-center gap-3 text-sm md:text-base"
+                className="bg-[#133D72] border border-[#29425E] rounded-lg p-3 flex items-center gap-3 text-[18px]"
               >
                 <Image
                   src={item.img}
                   alt={item.label}
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
+                  width={28}
+                  height={28}
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 {item.label}
               </div>
@@ -122,8 +126,9 @@ export default function AcufiBankVerification() {
           </div>
         </div>
 
-        <div className="w-[50%]  bg-[#0B2D58] p-5 md:p-5  rounded-b-[14px]">
-          <h3 className="text-xl md:text-2xl font-semibold mb-6">
+        {/* Proven Impact */}
+        <div className="w-full bg-[#0B2D58] p-4 sm:p-5 rounded-b-[14px] xl:w-1/2">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
             Proven Impact
           </h3>
           <div className="grid grid-cols-1 gap-4">
@@ -143,14 +148,14 @@ export default function AcufiBankVerification() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="bg-[#133D72] border border-[#29425E] rounded-lg p-2 flex items-center gap-3 text-sm md:text-base"
+                className="bg-[#133D72] border border-[#29425E] rounded-lg p-3 flex items-center gap-3 text-[18px]"
               >
                 <Image
                   src={item.img}
                   alt={item.label}
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
+                  width={28}
+                  height={28}
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 {item.label}
               </div>

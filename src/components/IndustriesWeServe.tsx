@@ -118,7 +118,7 @@ const industries = [
 export default function Industries() {
   return (
     <section
-      className="py-16 px-6 md:px-12 bg-cover bg-center bg-no-repeat"
+      className="py-16 px-6 md:px-12 bg-cover bg-top bg-no-repeat"
       style={{
         backgroundImage:
           "url('/IndustriesWeServe-bg.webp')",
