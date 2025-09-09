@@ -9,13 +9,12 @@ export default function HeroSection() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowOverlay(true);
-    }, 200); // 2 seconds
+    }, 200); 
 
     return () => clearTimeout(timer);
   }, []);
   return (
     <section className="relative w-full text-white font-sarabun overflow-hidden min-h-[700px] pt-10 ">
-      {/* Full background video */}
       <video
         autoPlay
         muted
@@ -94,7 +93,7 @@ export default function HeroSection() {
             financial services designed for your business.
           </p>
 
-          <div className="flex justify-start mt-2 lg:mt-4">
+          <div className="flex justify-start mt-2 lg:mt-4 ml-[-7px]">
             <div className="relative w-[250px] h-[160px] rounded-[20px] overflow-hidden cursor-pointer group">
               <video
                 src="/Button-animation-Acufi.webm"
