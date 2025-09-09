@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <footer className="bg-[#011634] text-gray-300 px-6 md:px-12 py-12 rounded-t-[22px]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
-          <div className="flex flex-col items-center md:items-start justify-center">
+          <div className="flex flex-col items-start md:items-start justify-start lg:justify-center">
             <Image
               src="/AcufiLogoFooter.png"
               alt="AcuFi Logo"

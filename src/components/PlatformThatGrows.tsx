@@ -232,7 +232,7 @@ export default function Comparison() {
           </div>
         </div>
 
-        {/* <div className="grid grid-cols-2 gap-3 w-full px-2 md:hidden">
+        <div className="grid grid-cols-2 gap-3 w-full px-2 md:hidden">
           <div className="bg-white rounded-[15px] shadow-md overflow-hidden">
             <div className="bg-gradient-to-r from-[#095ABB] to-[#0D86D4] text-white text-center font-semibold text-[15px] py-2">
               Acufi
@@ -316,107 +316,13 @@ export default function Comparison() {
               ))}
             </div>
           </div>
-        </div> */}
-        <div className="grid grid-cols-2 gap-3 w-full px-2 md:hidden">
-          <div className="bg-white rounded-[15px] shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-[#095ABB] to-[#0D86D4] text-white text-center font-semibold text-[15px] py-2">
-              Acufi
-            </div>
-            <div className="flex flex-col">
-              {[
-                "Account Setup Time",
-                "Credit Risk Insights",
-                "Industry Support",
-                "Fraud Detection",
-                "Onboarding Experience",
-              ].map((feature, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0"
-                  style={{
-                    minHeight: "72px", // You can adjust this value as needed
-                    height: "72px", // Fixed height for each row
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className="font-semibold text-[#444] text-[14px] mb-2">
-                    {feature}
-                  </div>
-                  <div className="flex items-center text-[#10A449] text-[13px]">
-                    <Image
-                      src="https://acufi.com/wp-content/uploads/2025/07/Frame-2147226778.svg"
-                      alt="Yes"
-                      width={20}
-                      height={20}
-                      className="mr-2"
-                    />
-                    {
-                      [
-                        "1 - 3 Days",
-                        "Real-Time Cash Flow analysis + Loan Stacking",
-                        "Short-term lending, Peptides, Cannabis, Crypto, etc.",
-                        "Behavioral + Warnings",
-                        "100% Digital",
-                      ][i]
-                    }
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="bg-white rounded-[15px] shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-[#095ABB] to-[#0D86D4] text-white text-center font-semibold text-[15px] py-2">
-              Traditional Banks
-            </div>
-            <div className="flex flex-col">
-              {[
-                "Account Setup Time",
-                "Credit Risk Insights",
-                "Industry Support",
-                "Fraud Detection",
-                "Onboarding Experience",
-              ].map((feature, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0"
-                  style={{
-                    minHeight: "72px", // You can adjust this value as needed
-                    height: "72px", // Fixed height for each row
-                    justifyContent: "center",
-                  }}
-                >
-                  <div className="font-semibold text-[#444] text-[14px] mb-2">
-                    {feature}
-                  </div>
-                  <div className="flex items-center text-[#F83F3F] text-[13px]">
-                    <Image
-                      src="https://acufi.com/wp-content/uploads/2025/07/Icons.svg"
-                      alt="No"
-                      width={20}
-                      height={20}
-                      className="mr-2"
-                    />
-                    {
-                      [
-                        "2 - 6 Weeks",
-                        "Outdated Reports (30 - 60 days)",
-                        "Declined",
-                        "Minimal",
-                        "Paper-heavy, slow",
-                      ][i]
-                    }
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
+
         <div className="mt-30">
           <Link href="https://acufi.com/lets-connect/">
             <button
               type="button"
-              className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
+              className="flex items-center justify-center w-55 min-h-[0px] text-white font-semibold cursor-pointer"
               style={{
                 backgroundImage: "url('/button-bg.webp')",
                 backgroundSize: "100% 100%",
