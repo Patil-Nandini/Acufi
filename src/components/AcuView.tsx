@@ -104,7 +104,7 @@ export default function AcuView() {
   </button>
 
   <button
-    className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer"
+    className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer ml-[-7px]"
     onClick={() =>
       (window.location.href = "https://acufi.com/acuview-get-started/")
     }

@@ -45,16 +45,16 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-20  gap-2 md:gap-[2] lg:gap-[2]">
         <div className="flex-1">
-          <h1 className="text-[32px] md:text-[42px] font-bold leading-tight text-white uppercase">
+          <h1 className="text-[27px] sm:text-[40px] md:text-[42px] font-bold leading-tight text-white uppercase">
             <span
-              className="inline-block px-4 py-4 rounded-[60px] text-[35px] md:text-[35px] font-bold"
+              className="inline-block py-[20px] px-[32px] sm:px-[47px] sm:py-[20px] rounded-[60px] text-[35px] md:text-[35px] font-bold "
               style={{
                 backgroundImage:
                   "url('https://acufi.com/wp-content/uploads/2025/07/acufi-bg.webp')",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                padding: "20px 47px",
+                // padding: "20px 47px",
                 marginLeft: "-12px",
               }}
             >

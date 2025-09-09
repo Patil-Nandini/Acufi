@@ -65,7 +65,7 @@ export default function AcuCheck() {
                 className="
         relative overflow-hidden 
         flex items-center justify-center gap-2 
-        px-6 py-7 sm:py-6 h-[72px] w-[255px]
+        px-6 py-7 sm:py-6 h-[80px] md:h-[70px] w-[280px] md:w-[250px] ml-[-7px]
         text-white font-semibold
          cursor-pointer
       "

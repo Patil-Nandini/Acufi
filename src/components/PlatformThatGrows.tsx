@@ -322,7 +322,7 @@ export default function Comparison() {
           <Link href="https://acufi.com/lets-connect/">
             <button
               type="button"
-              className="flex items-center justify-center w-55 min-h-[0px] text-white font-semibold cursor-pointer"
+              className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
               style={{
                 backgroundImage: "url('/button-bg.webp')",
                 backgroundSize: "100% 100%",
