@@ -20,8 +20,8 @@ const BankingModels = () => {
           className="w-full sm:w-4/5"
         />
 
-        <div
-          className="relative flex flex-col w-full max-w-5xl items-center bg-no-repeat bg-center bg-cover opacity-89 min-h-0 sm:min-h-[500px]"
+       <div
+          className="relative flex flex-col w-full max-w-5xl items-center bg-no-repeat bg-center bg-cover opacity-79 min-h-0 sm:min-h-[500px]"
           style={{
             backgroundImage: "url('/layout-webp.webp')",
           }}

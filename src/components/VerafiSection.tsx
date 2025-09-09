@@ -87,13 +87,13 @@ const VerafiSection = () => {
       {/* Key Features */}
       <div className="w-[95%] lg:w-[85%] bg-white px-4 md:px-6 py-6 flex flex-col items-center">
         <h2
-          className="relative text-[26px] text-[#0F1720] font-bold border-b border-[#156dde] pb-4 px-2 text-center w-fit
+          className="relative text-[26px] text-[#0F1720] font-bold border-b border-[#156dde] pb-3 px-2 text-center w-fit
   before:content-[''] before:absolute before:top-full before:left-0 before:-translate-x-1/2 before:-translate-y-1/2
   before:w-3 before:h-3 before:rounded-full before:[background:linear-gradient(96.11deg,#2D6CED_-133.89%,#026BD4_164.42%)]
   before:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)]
   after:content-[''] after:absolute after:top-full after:right-0 after:translate-x-[100%] after:-translate-y-1/2
   after:w-3 after:h-3 after:rounded-full after:[background:linear-gradient(96.11deg,#2D6CED_-133.89%,#026BD4_164.42%)]
-  after:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)]"
+  after:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)] pl-[10px]"
         >
           Key Features
         </h2>

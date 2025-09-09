@@ -77,50 +77,50 @@ export default function AcuView() {
               <span className="ml-2">See AcuView in Action</span>
             </button>
           </div> */}
-          <div className="flex flex-wrap gap-3 mt-6 justify-center sm:justify-start">
-  <button
-    type="button"
-    className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[300px] px-7"
-    style={{
-      backgroundImage: "url('/AcuViewButtonBg.webp')",
-      backgroundSize: "100% 100%",
-      backgroundRepeat: "no-repeat",
-      paddingBottom: "25px",
-    }}
-    aria-label="Start Your Free 90-Day Trial"
-    onClick={() =>
-      (window.location.href = "https://acufi.com/lets-connect/")
-    }
-  >
-    <Image
-      src="/RocketIcon.png"
-      alt="Rocket Icon"
-      width={20}
-      height={20}
-    />
-    <span className="ml-2 whitespace-nowrap">
-      Start Your Free 30-Day Trial
-    </span>
-  </button>
+          <div className="flex flex-wrap gap-3 mt-6 justify-center sm:justify-start ml-[-8]">
+            <button
+              type="button"
+              className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[300px] px-7"
+              style={{
+                backgroundImage: "url('/AcuViewButtonBg.webp')",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+                paddingBottom: "25px",
+              }}
+              aria-label="Start Your Free 90-Day Trial"
+              onClick={() =>
+                (window.location.href = "https://acufi.com/lets-connect/")
+              }
+            >
+              <Image
+                src="/RocketIcon.png"
+                alt="Rocket Icon"
+                width={20}
+                height={20}
+              />
+              <span className="ml-2 whitespace-nowrap">
+                Start Your Free 30-Day Trial
+              </span>
+            </button>
 
-  <button
-    className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer ml-[-7px]"
-    onClick={() =>
-      (window.location.href = "https://acufi.com/acuview-get-started/")
-    }
-  >
-    <Image
-      src="/VideoIcon.png"
-      alt="Demo Icon"
-      width={25}
-      height={25}
-    />
-    <span className="ml-2 whitespace-nowrap">
-      See AcuView in Action
-    </span>
-  </button>
-</div>
-
+            <button
+              className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer ml-[-7px]"
+              onClick={() =>
+                (window.location.href =
+                  "https://acufi.com/acuview-get-started/")
+              }
+            >
+              <Image
+                src="/VideoIcon.png"
+                alt="Demo Icon"
+                width={25}
+                height={25}
+              />
+              <span className="ml-2 whitespace-nowrap">
+                See AcuView in Action
+              </span>
+            </button>
+          </div>
         </div>
 
         {/* Right Illustration */}
@@ -180,7 +180,7 @@ export default function AcuView() {
         ].map((section, idx) => (
           <div
             key={idx}
-            className="flex-1 min-w-[280px] bg-white text-[#0F1720] p-3 sm:p-8 shadow-md"
+            className="flex-1 min-w-[280px] bg-white text-[#0F1720] p-3 sm:p-9 shadow-md"
           >
             <div className="relative flex items-center">
               <h3 className="text-base sm:text-lg md:text-xl font-semibold border-b border-[#156DDE] pb-3 w-full">
@@ -294,7 +294,7 @@ export default function AcuView() {
               <h2
                 className={`
             font-bold ${stat.color}
-            text-lg sm:text-xl lg:text-[30px]
+            text-lg sm:text-xl lg:text-[30px] xl:text-[35px]
             max-[767px]:text-[20px]
           `}
               >

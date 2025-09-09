@@ -85,7 +85,7 @@ export default function AcuPay() {
         </div>
       </div>
 
-      <div className="relative bg-[#0B2D58] px-4 sm:px-8 md:px-10 py-6 flex flex-col lg:flex-row items-center w-full lg:w-[85%] justify-between gap-0">
+      <div className="relative bg-[#0B2D58] px-4 sm:px-8 md:px-10 py-6 flex flex-col lg:flex-row items-center w-full lg:w-[85%] justify-center gap-0">
         <div
           className="lg:-rotate-10 w-[345] sm:w-[350px] h-[333px] sm:h-[350px] lg:w-[550px] xl:w-[350px] p-6 sm:p-8 rounded-xl text-white flex flex-col gap-2 relative z-10"
           style={{
@@ -181,7 +181,7 @@ export default function AcuPay() {
       </div>
 
       <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 sm:mx-10 lg:mx-20 w-full lg:w-[85%]">
-        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-6 rounded-b-[14px]">
+        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-9 rounded-b-[14px]">
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
             Why AcuPay Works For You
           </h3>
@@ -222,7 +222,7 @@ export default function AcuPay() {
         </div>
 
         {/* Right Box */}
-        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-6 rounded-b-[14px]">
+        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-9 rounded-b-[14px]">
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
             Membership & Subscription Billing
           </h3>

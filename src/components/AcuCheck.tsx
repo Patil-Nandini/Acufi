@@ -65,23 +65,23 @@ export default function AcuCheck() {
                 className="
         relative overflow-hidden 
         flex items-center justify-center gap-2 
-        px-6 py-7 sm:py-6 h-[80px] md:h-[70px] w-[280px] md:w-[250px] ml-[-7px]
+        px-6 py-7 sm:py-6 h-[80px] md:h-[72px] w-[280px] md:w-[250px] ml-[-7px]
         text-white font-semibold
          cursor-pointer
       "
               >
                 <span
                   className="absolute inset-0 z-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/AcuCheck2Bg.webp')" }}
+                  style={{ backgroundImage: "url('RequestDemoAcuCheck.png')" }}
                 />
                 <Image
                   src="/RequestDemoWhite.svg"
                   alt="Demo"
                   width={20}
                   height={20}
-                  className="relative"
+                  className="relative pb-[10px]"
                 />
-                <span className="relative">Request A Demo</span>
+                <span className="relative pb-[10px]">Request A Demo</span>
                 <span className="absolute top-[-6] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[50%] pointer-events-none" />
               </button>
             </Link>
@@ -180,7 +180,7 @@ export default function AcuCheck() {
       </div>
 
       {/* Know Your Customer */}
-      <div className="bg-[#0B2D58] text-white mt-2 mb-15 p-6 sm:p-8 w-[95%] lg:w-[85%] rounded-b-[14px]">
+      <div className="bg-[#0B2D58] text-white mt-2 mb-15 p-6 sm:p-9 w-[95%] lg:w-[85%] rounded-b-[14px]">
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
           Know Your Customer
         </h2>

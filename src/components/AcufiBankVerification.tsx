@@ -35,7 +35,7 @@ export default function AcufiBankVerification() {
               {
                 img: "/vector-icon.svg",
                 label: (
-                  <a href="tel:8667114350" className="font-bold underline">
+                  <a href="tel:8667114350" className="underline text-[16px]">
                     866-711-4350
                   </a>
                 ),
@@ -44,7 +44,7 @@ export default function AcufiBankVerification() {
               {
                 img: "/email.svg",
                 label: (
-                  <a href="mailto:sales@acufi.com" className="underline">
+                  <a href="mailto:sales@acufi.com" className="underline text-[16px]">
                     sales@acufi.com
                   </a>
                 ),
@@ -102,7 +102,7 @@ export default function AcufiBankVerification() {
       {/* Bottom Section */}
       <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 md:mx-8 lg:mx-[50px] w-[95%] lg:w-[85%] justify-center">
         {/* What You Get */}
-        <div className="w-full bg-[#0B2D58] p-4 sm:p-5 xl:rounded-b-[14px] xl:w-1/2 ">
+        <div className="w-full bg-[#0B2D58] p-4 sm:p-9 xl:rounded-b-[14px] xl:w-1/2 ">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
             What You Get
           </h3>
@@ -139,7 +139,7 @@ export default function AcufiBankVerification() {
         </div>
 
         {/* Proven Impact */}
-        <div className="w-full bg-[#0B2D58] p-4 sm:p-5 rounded-b-[14px] xl:w-1/2">
+        <div className="w-full bg-[#0B2D58] p-4 sm:p-9 rounded-b-[14px] xl:w-1/2">
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6">
             Proven Impact
           </h3>

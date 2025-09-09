@@ -123,7 +123,7 @@ const Testimonials = () => {
                     <h4 className="text-[22px] font-semibold text-[#0F1720]">
                       {t.name}
                     </h4>
-                    <span className="text-[18px] font-semibold text-[#0F1720] block">
+                    <span className="text-[18px] font-semibold text-[#575D63] block">
                       {t.role}
                     </span>
                   </div>

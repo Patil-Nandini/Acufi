@@ -161,7 +161,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Box 3 */}
-                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[7%] lg:left-[7%] xl:left-[7%] bottom-[7.8%] sm:bottom-[10%] md:bottom-[9%] lg:bottom-[9%] xl:bottom-[8%] w-[66%] sm:w-[62%] md:w-[58%] lg:w-[56%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-4">
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[7%] lg:left-[7%] xl:left-[7%] bottom-[7.8%] sm:bottom-[10%] md:bottom-[9%] lg:bottom-[9.5%] xl:bottom-[9%] w-[66%] sm:w-[62%] md:w-[58%] lg:w-[56%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-4">
                   <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
                     Purpose-built tools for lending, cash flow, and payments
                   </p>

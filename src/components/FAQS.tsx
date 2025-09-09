@@ -32,18 +32,15 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-  const [open, setOpen] = useState(1);
+  const [open, setOpen] = useState(0);
 
   return (
     <section className="relative w-full bg-[#F8F8FC] overflow-hidden font-sarabun px-4 sm:px-6 lg:px-8 py-12">
-      {/* Heading */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#0F1720] mt-[30px] md:mt-[1px]">
         Frequently Asked Questions
       </h2>
 
-      {/* Layout wrapper */}
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 mt-[60px]">
-        {/* FAQ list (Left side - More width) */}
         <div className="w-full lg:w-[60%] mt-6">
           <div className="space-y-3">
             {faqs.map((faq, i) => (
@@ -143,27 +140,30 @@ export default function FaqSection() {
               Can’t find the answer you’re looking for?
             </div>
             <>
-              <Link href="https://acufi.com/lets-connect/">
-                <button
-                  type="button"
-                  className="flex items-center justify-center gap-2 w-48 sm:w-50 min-h-[60px] sm:min-h-[70px] text-white font-semibold text-sm sm:text-base cursor-pointer"
-                  style={{
-                    backgroundImage: "url('/button-bg.webp')",
-                    backgroundSize: "100% 100%",
-                    backgroundRepeat: "no-repeat",
-                  }}
-                  aria-label="Get A Demo!"
-                >
-                  <Image
-                    src="/RocketIcon.png"
-                    alt="Rocket Icon"
-                    className="mb-6"
-                    width={18}
-                    height={18}
-                  />
-                  <span className="mb-6">Get Your Demo!</span>
-                </button>
-              </Link>
+              <button
+                type="button"
+                className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[280px] px-7"
+                style={{
+                  backgroundImage: "url('/AcuViewButtonBg.webp')",
+                  backgroundSize: "100% 100%",
+                  backgroundRepeat: "no-repeat",
+                  paddingBottom: "25px",
+                }}
+                aria-label="Start Your Free 90-Day Trial"
+                onClick={() =>
+                  (window.location.href = "https://acufi.com/lets-connect/")
+                }
+              >
+                <Image
+                  src="/RocketIcon.png"
+                  alt="Rocket Icon"
+                  width={20}
+                  height={20}
+                />
+                <span className="ml-2 whitespace-nowrap">
+                Get Your Demo!
+                </span>
+              </button>
             </>
           </div>
         </div>

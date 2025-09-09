@@ -24,26 +24,11 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
-              {/* <li>
-                <Link href="#" className="underline">
-                  Products
-                </Link>
-              </li> */}
-              {/* <li>
-                <Link href="#" className="underline">
-                  Acufi For Banking
-                </Link>
-              </li> */}
               <li>
                 <Link href="https://acufi.com/about-us/" className="underline">
                   About Us
                 </Link>
               </li>
-              {/* <li>
-                <Link href="#" className="underline">
-                  Sign In
-                </Link>
-              </li> */}
               <li>
                 <Link href="https://acufi.com/contact/" className="underline">
                   Contact Us
@@ -56,12 +41,18 @@ export default function Footer() {
             <h3 className="font-semibold mb-3">Legal</h3>
             <ul className="space-y-2 mb-6">
               <li>
-                <Link href="https://acufi.com/acufi-consumer-service-center/" className="underline">
+                <Link
+                  href="https://acufi.com/acufi-consumer-service-center/"
+                  className="underline"
+                >
                   Acufi Consumer Reporting Agency
                 </Link>
               </li>
               <li>
-                <Link href="https://acufi.com/privacy-policy/" className="underline">
+                <Link
+                  href="https://acufi.com/privacy-policy/"
+                  className="underline"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -80,47 +71,48 @@ export default function Footer() {
             <p className="text-sm">Email: sales@acufi.com</p>
             <p className="text-sm">Phone: +1-866-711-4350</p>
             <p className="text-sm">Address: 4864 Sparks Blvd, Nevada, 89436</p>
+            <div>
+              <h3 className="font-semibold mt-6 mb-2">Follow us</h3>
+              <div className="flex ml-[-15px]">
+                <Link
+                  href="https://www.linkedin.com/company/acu-fi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/LinkedInIcon.svg"
+                    alt="LinkedIn"
+                    width={66}
+                    height={66}
+                  />
+                </Link>
 
-            <h3 className="font-semibold mt-6 mb-2">Follow us</h3>
-            <div className="flex ml-[-15px]">
-              <Link
-                href="https://www.linkedin.com/company/acu-fi/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/LinkedInIcon.svg"
-                  alt="LinkedIn"
-                  width={66}
-                  height={66}
-                />
-              </Link>
+                <Link
+                  href="https://x.com/acu_fi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/Twitter.png"
+                    alt="X / Twitter"
+                    width={66}
+                    height={66}
+                  />
+                </Link>
 
-              <Link
-                href="https://x.com/acu_fi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/Twitter.png"
-                  alt="X / Twitter"
-                  width={66}
-                  height={66}
-                />
-              </Link>
-
-              <Link
-                href="https://www.youtube.com/@AcuFi_Official"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/youtube.png"
-                  alt="YouTube"
-                  width={66}
-                  height={66}
-                />
-              </Link>
+                <Link
+                  href="https://www.youtube.com/@AcuFi_Official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/youtube.png"
+                    alt="YouTube"
+                    width={66}
+                    height={66}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

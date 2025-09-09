@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Comparison() {
   return (
@@ -319,10 +319,10 @@ export default function Comparison() {
         </div>
 
         <div className="mt-30">
-          <Link href="https://acufi.com/lets-connect/">
+          {/* <Link href="https://acufi.com/lets-connect/">
             <button
               type="button"
-              className="flex items-center justify-center w-55 min-h-[70px] text-white font-semibold cursor-pointer"
+              className="flex items-center justify-center w-55 min-h-[80px] text-white font-semibold cursor-pointer"
               style={{
                 backgroundImage: "url('/button-bg.webp')",
                 backgroundSize: "100% 100%",
@@ -340,7 +340,29 @@ export default function Comparison() {
               />
               <span>Get Started!</span>
             </button>
-          </Link>
+          </Link> */}
+          <button
+            type="button"
+            className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[250px] px-7"
+            style={{
+              backgroundImage: "url('/AcuViewButtonBg.webp')",
+              backgroundSize: "100% 100%",
+              backgroundRepeat: "no-repeat",
+              paddingBottom: "25px",
+            }}
+            aria-label="Start Your Free 90-Day Trial"
+            onClick={() =>
+              (window.location.href = "https://acufi.com/lets-connect/")
+            }
+          >
+            <Image
+              src="/RocketIcon.png"
+              alt="Rocket Icon"
+              width={20}
+              height={20}
+            />
+            <span className="ml-2 whitespace-nowrap">Get Started!</span>
+          </button>
         </div>
       </div>
     </section>
