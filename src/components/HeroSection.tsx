@@ -1,8 +1,18 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowOverlay(true);
+    }, 200); // 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section className="relative w-full text-white font-sarabun overflow-hidden min-h-[700px] pt-10 ">
       {/* Full background video */}
@@ -45,7 +55,7 @@ export default function HeroSection() {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 padding: "20px 47px",
-                marginLeft:"-12px",
+                marginLeft: "-12px",
               }}
             >
               ACUFI
@@ -69,7 +79,7 @@ export default function HeroSection() {
                text-[14px] sm:text-[20px] lg:text-[18px] font-semibold text-white"
             >
               <span className="bg-gradient-to-r from-[#8EC9F2] to-[#8490FF] bg-clip-text text-transparent relative sm:bottom-[6px]">
-              When Banks Say No...We Say, Let&apos;s Talk!
+                When Banks Say No...We Say, Let&apos;s Talk!
               </span>
             </a>
           </div>
@@ -94,8 +104,13 @@ export default function HeroSection() {
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
-              <div className="relative z-10 flex flex-col justify-center items-center h-full text-white p-4 transition-transform duration-300 ease-in-out group-hover:scale-[1.03] group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-[20px]">
-                <div className="flex justify-end w-full mr-4">
+              <div className="relative z-10 flex flex-col justify-center items-center h-full text-white p-4 transition-transform duration-300 ease-in-out group-hover:scale-[1.03] group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.15)] rounded-[20px]"               onClick={() => {
+                    window.location.href = "https://acufi.com/lets-connect/";
+                  }}>
+                <div
+                  className="flex justify-end w-full mr-4"
+    
+                >
                   <Image
                     src="https://acufi.com/images/Arrow1Icon.svg"
                     alt="Arrow Icon"
@@ -130,52 +145,30 @@ export default function HeroSection() {
             </video>
 
             {/* Overlay text boxes — positioned in % so they follow the video size */}
-            <div className="absolute inset-0 z-20 pointer-events-none">
-              {/* Box 1 (top) */}
-              <div
-                className="
-          absolute pointer-events-auto
-         left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%]
-       top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[52%] xl:top-[53%]
-          w-[36%] sm:w-[62%] md:w-[33%] lg:w-[30%] xl:w-[30%]
-          text-white rounded-xl p-3 sm:p-3.5 md:p-2
-        "
-              >
-                <p className="font-semibold text-[6px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
-                  Get underwritten in 1–2 days
-                </p>
-              </div>
+            {showOverlay && (
+              <div className="absolute inset-0 z-20 pointer-events-none">
+                {/* Box 1 */}
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[52%] xl:top-[54%] w-[36%] sm:w-[62%] md:w-[33%] lg:w-[30%] xl:w-[30%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
+                  <p className="font-semibold text-[6px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
+                    Get underwritten in 1–2 days
+                  </p>
+                </div>
 
-              {/* Box 2 (middle) */}
-              <div
-                className="
-          absolute pointer-events-auto
-        left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%]
-        top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[67%] xl:top-[69%]
-          w-[48%] sm:w-[62%] md:w-[38%] lg:w-[40%] xl:w-[54%]
-          text-white rounded-xl p-3 sm:p-3.5 md:p-2
-        "
-              >
-                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px]  leading-snug">
-                  Full-service business banking
-                </p>
-              </div>
+                {/* Box 2 */}
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[67%] xl:top-[69%] w-[48%] sm:w-[62%] md:w-[38%] lg:w-[40%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
+                  <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
+                    Full-service business banking
+                  </p>
+                </div>
 
-              {/* Box 3 (bottom) */}
-              <div
-                className="
-          absolute pointer-events-auto
-        left-[6%]  sm:left-[8%] md:left-[7%] lg:left-[7%] xl:left-[7%]
-        bottom-[7.8%]  sm:bottom-[10%] md:bottom-[9%] lg:bottom-[9%] xl:bottom-[8%]
-          w-[66%] sm:w-[62%] md:w-[58%] lg:w-[56%] xl:w-[54%]
-          text-white rounded-xl p-3 sm:p-3.5 md:p-4
-        "
-              >
-                <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px]  leading-snug">
-                  Purpose-built tools for lending, cash flow, and payments
-                </p>
+                {/* Box 3 */}
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[7%] lg:left-[7%] xl:left-[7%] bottom-[7.8%] sm:bottom-[10%] md:bottom-[9%] lg:bottom-[9%] xl:bottom-[8%] w-[66%] sm:w-[62%] md:w-[58%] lg:w-[56%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-4">
+                  <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
+                    Purpose-built tools for lending, cash flow, and payments
+                  </p>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

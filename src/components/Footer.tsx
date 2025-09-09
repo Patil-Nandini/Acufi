@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-[#011634] text-gray-300 px-6 md:px-12 py-12">
+      <footer className="bg-[#011634] text-gray-300 px-6 md:px-12 py-12 rounded-t-[22px]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-7xl mx-auto">
           <div className="flex flex-col items-center md:items-start justify-center">
             <Image
@@ -82,7 +82,7 @@ export default function Footer() {
             <p className="text-sm">Address: 4864 Sparks Blvd, Nevada, 89436</p>
 
             <h3 className="font-semibold mt-6 mb-2">Follow us</h3>
-            <div className="flex">
+            <div className="flex ml-[-15px]">
               <Link
                 href="https://www.linkedin.com/company/acu-fi/"
                 target="_blank"

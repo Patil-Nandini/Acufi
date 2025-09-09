@@ -7,23 +7,23 @@ import Image from "next/image";
 
 export default function BankingPage() {
     const [bgImage, setBgImage] = useState("/product-bg3.png"); 
-  const [bgSize, setBgSize] = useState<"cover" | "contain">("cover");
+  // const [bgSize, setBgSize] = useState<"cover" | "contain">("cover");
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 630) {
-       setBgImage("/for-dev.png"); 
-        setBgSize("contain");         
-      } else {
-        setBgImage("/product-bg3.png");
-        setBgSize("cover");            
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 630) {
+  //      setBgImage("/for-dev.png"); 
+  //       setBgSize("contain");         
+  //     } else {
+  //       setBgImage("/product-bg3.png");
+  //       setBgSize("cover");            
+  //     }
+  //   };
 
-    handleResize(); 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  //   handleResize(); 
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
   return (
     <div className="bg-white sarabun w-full flex align-center justify-center mt-12">
       <div className=" w-full flex items-center justify-center flex-col">
@@ -81,17 +81,17 @@ export default function BankingPage() {
         </section>
 
         <section
-          className="relative lg:py-24  w-full bg-no-repeat bg-cover"
+          className="relative lg:py-24  w-full bg-no-repeat bg-cover mt-[40px] lg:mt-0"
           style={{
             backgroundImage: `url(${bgImage})`,
-             backgroundSize: bgSize,
+            //  backgroundSize: bgSize,
             backgroundRepeat: "no-repeat",
           }}
         >
           <div className="container mx-auto w-[90%] sm:px-4">
             <div className="flex flex-col lg:flex-row w-[100%] items-center gap-16 py-4">
               <div className="w-full md:w-full lg:w-1/2 flex flex-col justify-center ">
-                <h1 className="text-4xl md:text-4xl font-bold text-[#0F1720]">
+                <h1 className="text-4xl md:text-4xl font-bold text-[#0F1720] ">
                   Banking That Helps Grow
                   <br /> Your Business
                 </h1>

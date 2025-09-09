@@ -44,7 +44,7 @@ export default function AcuPay() {
                 <span>Explore AcuPay in Action</span>
               </button>
             </Link>
-            <Link href="https://acufi.com/acucheck-get-started/">
+            {/* <Link href="#">
               <button
                 className="
         relative overflow-hidden 
@@ -68,7 +68,7 @@ export default function AcuPay() {
                 <span className="relative">Request A Demo</span>
                 <span className="absolute top-[-6] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] h-[50%] pointer-events-none" />
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
 

@@ -118,11 +118,8 @@ const industries = [
 export default function Industries() {
   return (
     <section
-      className="py-16 px-6 md:px-12 bg-cover bg-top bg-no-repeat"
-      style={{
-        backgroundImage:
-          "url('/IndustriesWeServe-bg.webp')",
-      }}
+      className="py-16 px-6 md:px-12 bg-top bg-no-repeat 
+             lg:bg-[url('/IndustriesWeServe-bg.webp')]"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

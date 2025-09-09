@@ -89,7 +89,7 @@ export default function AcuView() {
     }}
     aria-label="Start Your Free 90-Day Trial"
     onClick={() =>
-      (window.location.href = "https://acufi.com/acuview-get-started/")
+      (window.location.href = "https://acufi.com/lets-connect/")
     }
   >
     <Image
@@ -99,14 +99,14 @@ export default function AcuView() {
       height={20}
     />
     <span className="ml-2 whitespace-nowrap">
-      Start Your Free 90-Day Trial
+      Start Your Free 30-Day Trial
     </span>
   </button>
 
   <button
     className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer"
     onClick={() =>
-      (window.location.href = "https://acufi.com/lets-connect/")
+      (window.location.href = "https://acufi.com/acuview-get-started/")
     }
   >
     <Image

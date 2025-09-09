@@ -36,7 +36,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full absolute top-0 left-0 z-20 border-b-[1px] border-b-[#636E76] bg-[rgba(255,255,255,0.1)]">
+    <header className="w-full absolute top-0 left-0 z-20  bg-[rgba(255,255,255,0.1)]">
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 cursor-pointer">
@@ -69,7 +69,7 @@ export default function Header() {
               </svg>
             </button>
             {/* Dropdown */}
-            <div className="border-[20px] border-[#C3E1FF] rounded absolute top-full mt-2.5 w-80 bg-white rounded-xl shadow-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div className="border-[20px] border-[#C3E1FF] rounded absolute top-full mt-2.5 w-80 bg-white rounded-t-[12px] rounded-xl shadow-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm ">
                 Products
               </h4>{" "}
@@ -105,6 +105,7 @@ export default function Header() {
                 ))}{" "}
               </ul>{" "}
             </div>{" "}
+            
           </div>
 
           <span className="font-semibold text-md cursor-pointer">

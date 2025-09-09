@@ -37,12 +37,12 @@ export default function FaqSection() {
   return (
     <section className="relative w-full bg-[#F8F8FC] overflow-hidden font-sarabun px-4 sm:px-6 lg:px-8 py-12">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#0F1720]">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-[#0F1720] mt-[30px] md:mt-[1px]">
         Frequently Asked Questions
       </h2>
 
       {/* Layout wrapper */}
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 mt-[60px]">
         {/* FAQ list (Left side - More width) */}
         <div className="w-full lg:w-[60%] mt-6">
           <div className="space-y-3">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FoundingMembersPage() {
   return (
@@ -82,7 +83,31 @@ export default function FoundingMembersPage() {
                 </div>
               </div>
             </div>
+            <div className="mt-16 flex justify-start gap-4">
+              <Link href="https://acufi.com/lets-connect/">
+                <button
+                  className="flex items-center gap-2 font-semibold py-3 px-8 transition-colors cursor-pointer"
+                  style={{
+                    backgroundColor: "#fff",
+                    color: "#085AAC",
+                    border: "2px solid #085AAC",
+                    borderRadius: "45px",
+                    boxShadow: "0px 5px 18px -9.3px #01459FCC",
+                  }}
+                >
+                  <Image
+                    src="/customer-support.svg"
+                    alt="support"
+                    width={20}
+                    height={20}
+                    className="w-5 h-5"
+                  />
+                  Talk to Sales
+                </button>
+              </Link>
+            </div>
           </div>
+
           <div className="flex justify-center xl:justify-end items-center w-full">
             <Image
               src="/Maskgroup.webp"

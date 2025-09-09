@@ -165,46 +165,47 @@ const VerafiSection = () => {
           >
             Benefit
           </h2>
-         <div className="flex flex-col gap-4">
-  {[
-    {
-      img: "/IconLendersOne.svg",
-      text: (
-        <>
-          Faster onboarding (
-          <span className="font-extrabold text-[18px]">73%</span> Time
-          Reduction)
-        </>
-      ),
-    },
-    { img: "/BenifitTwo.svg", text: "Reduced Fraud Risk" },
-    {
-      img: "/BenifitThree.svg",
-      text: (
-        <>
-          <span className="font-extrabold mr-2 text-[18px]">10-Second</span>
-          Video Verification
-        </>
-      ),
-    },
-    { img: "/BenifitFour.svg", text: "Ready To Use SDK" },
-  ].map((item, idx) => (
-    <div
-      key={idx}
-      className="flex items-start text-[18px] leading-snug gap-2"
-    >
-      <Image
-        src={item.img}
-        alt="Benefit"
-        width={30}
-        height={30}
-        className="w-[30px] h-[30px] mt-1"
-      />
-      <span>{item.text}</span>
-    </div>
-  ))}
-</div>
-
+          <div className="flex flex-col gap-4">
+            {[
+              {
+                img: "/IconLendersOne.svg",
+                text: (
+                  <>
+                    Faster onboarding (
+                    <span className="font-extrabold text-[18px]">73%</span> Time
+                    Reduction)
+                  </>
+                ),
+              },
+              { img: "/BenifitTwo.svg", text: "Reduced Fraud Risk" },
+              {
+                img: "/BenifitThree.svg",
+                text: (
+                  <>
+                    <span className="font-extrabold mr-2 text-[18px]">
+                      10-Second
+                    </span>
+                    Video Verification
+                  </>
+                ),
+              },
+              { img: "/BenifitFour.svg", text: "Ready To Use SDK" },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex items-start md:items-center text-[18px] leading-snug gap-2"
+              >
+                <Image
+                  src={item.img}
+                  alt="Benefit"
+                  width={30}
+                  height={30}
+                  className="w-[30px] h-[30px] mt-1"
+                />
+                <span>{item.text}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Who For */}
