@@ -25,7 +25,7 @@ export default function AcuCheck() {
         </h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
+      <div className="flex flex-col xl:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
         <div className="flex-[1.6] text-left ">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
             Cash Flow Is The New Credit Score
@@ -190,7 +190,7 @@ export default function AcuCheck() {
           <h3 className="text-lg sm:text-xl font-medium mb-4">
             Bank Account Ownership
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 items-stretch">
             {items.map((item) => (
               <div
                 key={item.label}
@@ -213,7 +213,7 @@ export default function AcuCheck() {
           <h3 className="text-lg sm:text-xl font-medium mb-4">
             Bank Account History
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 items-stretch">
             {historyItems.map((item) => (
               <div
                 key={item.label}

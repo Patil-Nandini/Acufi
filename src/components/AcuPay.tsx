@@ -14,7 +14,7 @@ export default function AcuPay() {
         </h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
+      <div className="flex flex-col xl:flex-row items-center justify-between bg-[#0B2D58] text-white rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
         <div className="flex-[1.6] text-left ">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
             Modern Payment Processing… Built for High-Risk Businesses
@@ -73,7 +73,7 @@ export default function AcuPay() {
         </div>
 
         {/* Image */}
-        <div className="flex-1 flex justify-center lg:justify-end w-[100%]">
+        <div className="flex-1 flex justify-center lg:center w-[100%]">
           <object
             type="image/svg+xml"
             data="/Modern-payment-processing-New.svg"

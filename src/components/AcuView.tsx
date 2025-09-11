@@ -13,7 +13,7 @@ export default function AcuView() {
         </h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-white  rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
+      <div className="flex flex-col xl:flex-row items-center justify-between bg-white  rounded-t-[14px] px-5 sm:px-8 lg:px-9 w-[95%] lg:w-[85%] py-8 gap-8">
         <div className="flex-[1.4] w-full mb-8 lg:mb-0">
           <h2 className="text-2xl sm:text-3xl font-semibold text-[#0F1720] mb-4">
             Real-Time Loan Intelligence
@@ -262,7 +262,7 @@ export default function AcuView() {
       flex flex-col md:flex-row justify-center items-center text-center
       gap-6 md:gap-10
       w-[60%] md:w-[65%] px-4 sm:px-0
-      max-[767px]:flex-col max-[767px]:gap-[122px] md:gap-[73px] max-[767px]:max-w-[300px]
+      max-[767px]:flex-col max-[767px]:gap-[122px] md:gap-[73px] max-[767px]:max-w-[300px] lg:gap-[45px] xl:gap-[130px]
     "
         >
           {[
@@ -285,7 +285,7 @@ export default function AcuView() {
             <div
               key={i}
               className={`
-    w-full md:w-[27%]
+    w-full md:w-[27%] lg:w-[25%] xl:w-[20%]
     ${i === 0 ? "max-[767px]:w-[60%]" : ""}
     ${i === 1 ? "max-[767px]:w-[70%]" : ""}
     ${i === 2 ? "max-[767px]:w-[70%]" : ""}

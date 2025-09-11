@@ -12,7 +12,7 @@ export default function AcufiBankVerification() {
         </h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row flex-wrap items-center justify-between bg-[#0B2D58] px-6 sm:px-10 text-white rounded-t-[14px] mx-4 md:mx-8 lg:mx-[50px] w-[95%] lg:w-[85%] py-8 md:py-10 xl:py-12">
+      <div className="flex flex-col xl:flex-row flex-wrap items-center justify-between bg-[#0B2D58] px-6 sm:px-10 text-white rounded-t-[14px] mx-4 md:mx-8 lg:mx-[50px] w-[95%] lg:w-[85%] py-8 md:py-10 xl:py-12">
         <div className="flex-1 min-w-[280px] max-w-full lg:min-w-[55%]">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4">
             Verify Bank Account Ownership In Seconds

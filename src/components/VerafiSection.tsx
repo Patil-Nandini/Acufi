@@ -46,7 +46,7 @@ const VerafiSection = () => {
       </div>
 
       {/* Top content */}
-      <div className="flex flex-col lg:flex-row items-center justify-center w-[95%] lg:w-[85%] bg-white rounded-t-[14px] px-4 md:px-8 py-6 md:py-10">
+      <div className="flex flex-col xl:flex-row items-center justify-center w-[95%] lg:w-[85%] bg-white rounded-t-[14px] px-4 md:px-8 py-6 md:py-10">
         {/* Left text */}
         <div className="flex-1 min-w-[280px] px-5 md:px-5">
           <h2 className="text-3xl sm:text-3xl md:text-3xl font-semibold mb-4 text-[#0F1720]">
@@ -153,9 +153,9 @@ const VerafiSection = () => {
       </div>
 
       {/* Bottom sections */}
-      <div className="flex flex-col lg:flex-row gap-2 w-[95%] lg:w-[85%] mt-2">
+      <div className="flex flex-col xl:flex-row gap-2 w-[95%] lg:w-[85%] mt-2">
         {/* Benefits */}
-        <div className="flex-1 bg-white text-[#0F1720] p-6 md:p-8 rounded-b-[14px]">
+        <div className="flex-1 bg-white text-[#0F1720] p-6 md:p-8 xl:rounded-b-[14px]">
           <h2
             className="relative block text-[26px] font-semibold text-[#0F1720] mb-6 border-b border-[#156dde] pb-2 pl-2
             before:content-[''] before:absolute before:top-full before:left-0 before:-translate-x-1/2 before:-translate-y-1/2
