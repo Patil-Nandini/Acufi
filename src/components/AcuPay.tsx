@@ -85,7 +85,7 @@ export default function AcuPay() {
         </div>
       </div>
 
-      <div className="relative bg-[#0B2D58] px-4 sm:px-8 md:px-10 py-6 flex flex-col lg:flex-row items-center w-full lg:w-[85%] justify-center gap-0">
+      <div className="relative bg-[#0B2D58] px-4 sm:px-8 md:px-10 py-6 flex flex-col lg:flex-row items-center w-[95%] lg:w-[85%] justify-center gap-0">
         <div
           className="lg:-rotate-10 w-[345] sm:w-[350px] h-[333px] sm:h-[350px] lg:w-[550px] xl:w-[350px] p-6 sm:p-8 rounded-xl text-white flex flex-col gap-2 relative z-10"
           style={{
@@ -124,7 +124,7 @@ export default function AcuPay() {
           <object
             type="image/svg+xml"
             data="/ACH-processing-Vertical-for-Mobile.svg"
-            className="w-[180px] h-[140px] sm:w-[250px] sm:h-[200px] lg:hidden"
+            className="w-[180px] h-[240px] sm:w-[250px] sm:h-[250px] md:h-[300px] lg:hidden"
             aria-label="Payment Connectivity Mobile"
           />
           <object
