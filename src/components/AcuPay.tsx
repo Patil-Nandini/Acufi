@@ -180,8 +180,8 @@ export default function AcuPay() {
         </div>
       </div>
 
-      <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 sm:mx-10 lg:mx-20 w-full lg:w-[85%]">
-        <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-9 rounded-b-[14px]">
+      <div className="flex flex-col xl:flex-row gap-2 mt-2 text-white mx-4 sm:mx-10 lg:mx-20 w-[95%]  lg:w-[85%]">
+     <div className="w-full xl:w-1/2 bg-[#0B2D58] p-4 sm:p-9 lg:rounded-b-[14px]">
           <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
             Why AcuPay Works For You
           </h3>
