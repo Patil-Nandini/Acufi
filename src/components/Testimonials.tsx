@@ -77,7 +77,7 @@ const Testimonials = () => {
 
   return (
     <section
-      className="w-full py-16 flex justify-center"
+      className="w-full py-18 pb-30 flex justify-center"
       style={{
         backgroundImage: "url('/testimonials-bgi.webp')",
         backgroundSize: "cover",
@@ -87,7 +87,7 @@ const Testimonials = () => {
       <div className="w-full max-w-[1160px] px-4 flex flex-col items-center">
         {/* Heading */}
         <div className="mb-10 text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+          <h2 className="text-4xl md:text-4xl font-semibold text-gray-900">
             What People Say About Us
           </h2>
           <p className="text-[18px] text-[#0F1720] mt-2">

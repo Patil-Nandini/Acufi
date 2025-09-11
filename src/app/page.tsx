@@ -17,7 +17,7 @@ import VerafiSection from "@/components/VerafiSection";
 export default function Home() {
   return (
     <main className="bg-white flex justify-center">
-      <div className="w-full max-w-[1920px]">
+      <div className="w-full max-w-[1920px] h-full">
         <Header />
         <HeroSection />
         <BankingPage />

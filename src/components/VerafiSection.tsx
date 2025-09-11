@@ -40,7 +40,7 @@ const VerafiSection = () => {
     >
       {/* Heading */}
       <div className="px-4 mb-6">
-        <h1 className="text-center font-bold text-black text-2xl sm:text-3xl md:text-4xl pb-4">
+        <h1 className="text-center font-bold text-black text-4xl sm:text-3xl md:text-4xl pb-4">
           VeraFi.me
         </h1>
       </div>
@@ -87,13 +87,13 @@ const VerafiSection = () => {
       {/* Key Features */}
       <div className="w-[95%] lg:w-[85%] bg-white px-4 md:px-6 py-6 flex flex-col items-center">
         <h2
-          className="relative text-[26px] text-[#0F1720] font-bold border-b border-[#156dde] pb-3 px-2 text-center w-fit
+          className="relative text-[26px] text-[#0F1720] font-bold border-b border-[#156dde]  px-2 text-center w-fit
   before:content-[''] before:absolute before:top-full before:left-0 before:-translate-x-1/2 before:-translate-y-1/2
   before:w-3 before:h-3 before:rounded-full before:[background:linear-gradient(96.11deg,#2D6CED_-133.89%,#026BD4_164.42%)]
   before:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)]
   after:content-[''] after:absolute after:top-full after:right-0 after:translate-x-[100%] after:-translate-y-1/2
   after:w-3 after:h-3 after:rounded-full after:[background:linear-gradient(96.11deg,#2D6CED_-133.89%,#026BD4_164.42%)]
-  after:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)] pl-[10px]"
+  after:shadow-[inset_-1.62px_-1.62px_6.47px_rgba(255,255,255,0.25),0px_0px_17.56px_3.24px_rgba(27,114,222,0.33)] pl-[15px] pb-3"
         >
           Key Features
         </h2>
@@ -107,29 +107,29 @@ const VerafiSection = () => {
             height={390}
             className="w-full h-auto"
           />
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[20%] lg:left-[5%] xl:left-[2.7%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-5 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[20%] lg:left-[5%] xl:left-[2.7%]">
             Supports US & Canadian IDs <br />
             (passport + driver’s license)
           </div>
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[43%] lg:-left-[1.7%] xl:-left-[4%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-5 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[43%] lg:-left-[1.7%] xl:-left-[4%]">
             Real-time face match & anti-
             <br />
             spoofing liveness detection
           </div>
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[66%] lg:left-[3%] xl:left-[0.7%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-5 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[66%] lg:left-[3%] xl:left-[0.7%]">
             White-labeled, mobile & PWA-
             <br />
             compatible UI
           </div>
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[20%] lg:right-[4.5%] xl:right-[2.2%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-6 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[20%] lg:right-[4.5%] xl:right-[2.2%]">
             Azure-powered document and <br />
             face intelligence
           </div>
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[42%] lg:-right-[1.7%] xl:-right-[4%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-6 lg:w-[25%] xl:w-[27.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[42%] lg:-right-[1.7%] xl:-right-[4%]">
             Full audit trails and API-based <br />
             integration
           </div>
-          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-4 lg:w-[26%] xl:w-[30.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[66%] lg:right-[2.2%] xl:-right-[2.2%]">
+          <div className="absolute text-white lg:text-[12px] xl:text-[14px] lg:p-3 xl:p-6 lg:w-[26%] xl:w-[30.5%] text-center bg-[url('/pill-with-white.webp')] bg-cover bg-center bg-no-repeat top-[65%] lg:right-[2.2%] xl:-right-[2.2%]">
             Built-in compliance (GDPR, CCPA, <br />
             PIPEDA)
           </div>

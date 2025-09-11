@@ -20,7 +20,7 @@ export default function AcuCheck() {
   return (
     <div className="font-sarabun bg-[#001334] w-full flex flex-col items-center">
       <div className="pb-8 py-8 sm:py-12">
-        <h1 className="text-center font-bold text-white text-2xl sm:text-3xl lg:text-4xl">
+        <h1 className="text-center font-bold text-white text-4xl sm:text-3xl lg:text-4xl">
           AcuCheck
         </h1>
       </div>

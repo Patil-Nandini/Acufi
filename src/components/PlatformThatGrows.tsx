@@ -14,7 +14,7 @@ export default function Comparison() {
           <span className="bg-black text-white text-xs font-semibold px-6 py-2 rounded-full text-[18px]">
             AcuFi
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-4 text-gray-900">
+          <h2 className="text-4xl md:text-4xl font-bold mt-4 text-gray-900">
             A platform That Grows with You
           </h2>
           <p className="text-[#0F1720]-600 mt-2 text-[18px]">
@@ -247,7 +247,7 @@ export default function Comparison() {
               ].map((feature, i) => (
                 <div
                   key={i}
-                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0"
+                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0 h-[208px] justify-around sm:h-auto sm:justify-start"
                 >
                   <div className="font-semibold text-[#444] text-[14px] mb-2">
                     {feature}
@@ -289,7 +289,7 @@ export default function Comparison() {
               ].map((feature, i) => (
                 <div
                   key={i}
-                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0"
+                  className="flex flex-col p-4 border-b border-gray-200 last:border-b-0 h-[208px] justify-around sm:h-auto sm:justify-start"
                 >
                   <div className="font-semibold text-[#444] text-[14px] mb-2">
                     {feature}

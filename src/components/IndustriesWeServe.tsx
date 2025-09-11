@@ -118,31 +118,31 @@ const industries = [
 export default function Industries() {
   return (
     <section
-      className="py-16 px-6 md:px-12 bg-top bg-no-repeat 
-             lg:bg-[url('/IndustriesWeServe-bg.webp')]"
+      className="py-16 px-6 md:px-12 lg:h-[7%]
+             lg:bg-[url('/IndustriesWeServe-bg.webp')]" style={{backgroundPosition:"center", backgroundSize:"cover", backgroundRepeat:"no-repeat"}}
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-4xl md:text-4xl font-bold text-gray-900 pt-[20px]">
           Industries We Serve
         </h2>
-        <p className="text-gray-600 mt-2" style={{ color: "#0F1720" }}>
-          If You’ve Been Called{" "}
+        <p className="text-gray-600 mt-2" style={{ color: "#0F1720",paddingTop:"15px" }}>
+          If You&apos;ve Been Called{" "}
           <span
             className="font-semibold text-gray-900"
             style={{ color: "#0F1720" }}
           >
             “Hard to Bank”
           </span>
-          , You’re in the Right Place.
+          , You&apos;re in the Right Place.
         </p>
 
-        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="mt-12 mb-0 lg:mb-[190px] grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-1 lg:gap-10 xl:mb-[1px]">
           {industries.map((item, idx) => (
             <div
               key={idx}
               className="relative flex flex-col items-center space-between gap-14"
             >
-              <div className="w-[100px] sm:w-20 h-20 z-10 mb-[-2rem] flex items-center justify-center">
+              <div className="w-[100%] h-[40%] z-10 mb-[-2rem] flex items-center justify-center">
                 {item.svg}
               </div>
 

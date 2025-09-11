@@ -69,43 +69,51 @@ export default function Header() {
               </svg>
             </button>
             {/* Dropdown */}
-          
-           
-            <div className="border-[20px] border-[#C3E1FF] rounded absolute top-full mt-2.5 w-80 bg-white rounded-t-[12px] rounded-xl shadow-lg p-4 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-              <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm ">
-                Products
-              </h4>{" "}
-              <ul className="space-y-4">
-                {" "}
-                {products.map((product) => (
-                  <li
-                    key={product.name}
-                    className="flex items-center space-x-3"
-                  >
-                    {" "}
-                    <div className="flex-shrink-0 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
+            <div
+              className="absolute top-full mt-2.5 w-80 
+             border border-white border-[1px] 
+             rounded-xl rounded-t-[12px] 
+             bg-[linear-gradient(274.17deg,rgba(250,251,252,0.5)_0%,rgba(227,241,255,0.5)_100%)] 
+             shadow-lg p-4 z-50 
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+             transition-all duration-200"
+            >
+              <div style={{ background: "#fff", borderRadius: "16px", padding:"15px" }}>
+                <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm ">
+                  Products
+                </h4>{" "}
+                <ul className="space-y-4">
+                  {" "}
+                  {products.map((product) => (
+                    <li
+                      key={product.name}
+                      className="flex items-center space-x-3"
+                    >
                       {" "}
-                      <Image
-                        src={product.icon}
-                        alt={product.name}
-                        width={28}
-                        height={28}
-                      />{" "}
-                    </div>{" "}
-                    <div className="flex flex-col">
-                      {" "}
-                      <span className="font-semibold text-[14px] text-[#0F1720] hover:underline cursor-pointer">
+                      <div className="flex-shrink-0 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
                         {" "}
-                        {product.name}{" "}
-                      </span>{" "}
-                      <span className="text-[#677489] text-[12px] leading-snug">
+                        <Image
+                          src={product.icon}
+                          alt={product.name}
+                          width={28}
+                          height={28}
+                        />{" "}
+                      </div>{" "}
+                      <div className="flex flex-col">
                         {" "}
-                        {product.desc}{" "}
-                      </span>{" "}
-                    </div>{" "}
-                  </li>
-                ))}{" "}
-              </ul>{" "}
+                        <span className="font-semibold text-[14px] text-[#0F1720] hover:underline cursor-pointer">
+                          {" "}
+                          {product.name}{" "}
+                        </span>{" "}
+                        <span className="text-[#677489] text-[12px] leading-snug">
+                          {" "}
+                          {product.desc}{" "}
+                        </span>{" "}
+                      </div>{" "}
+                    </li>
+                  ))}{" "}
+                </ul>{" "}
+              </div>
             </div>{" "}
           </div>
 

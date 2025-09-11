@@ -8,7 +8,7 @@ export default function AcuView() {
       style={{ backgroundImage: "url('/AcuViewBg.png')" }}
     >
       <div className="pb-8 py-8 sm:py-12">
-        <h1 className="text-center font-bold text-[#0F1720] text-2xl sm:text-3xl lg:text-4xl">
+        <h1 className="text-center font-bold text-[#0F1720] text-4xl sm:text-3xl lg:text-4xl">
           AcuView
         </h1>
       </div>
@@ -77,7 +77,7 @@ export default function AcuView() {
               <span className="ml-2">See AcuView in Action</span>
             </button>
           </div> */}
-          <div className="flex flex-wrap gap-3 mt-6 justify-center sm:justify-start ml-[-8]">
+          <div className="flex flex-wrap gap-[0] xl:gap-[2] mt-6 justify-start sm:justify-start ml-[-8]">
             <button
               type="button"
               className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[300px] px-7"
@@ -104,7 +104,7 @@ export default function AcuView() {
             </button>
 
             <button
-              className="flex items-center justify-center w-[230px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer ml-[-7px]"
+              className="flex items-center justify-center w-[250px] sm:w-[270px] h-[60px] text-[#085AAC] font-semibold border-2 border-[#085AAC] rounded-full shadow-md px-5 cursor-pointer ml-[7px] lg:ml-[7px] xl:ml-[0px]"
               onClick={() =>
                 (window.location.href =
                   "https://acufi.com/acuview-get-started/")

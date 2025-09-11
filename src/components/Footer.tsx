@@ -71,6 +71,7 @@ export default function Footer() {
             <p className="text-sm">Email: sales@acufi.com</p>
             <p className="text-sm">Phone: +1-866-711-4350</p>
             <p className="text-sm">Address: 4864 Sparks Blvd, Nevada, 89436</p>
+            
             <div>
               <h3 className="font-semibold mt-6 mb-2">Follow us</h3>
               <div className="flex ml-[-15px]">

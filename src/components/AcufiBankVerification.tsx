@@ -7,7 +7,7 @@ export default function AcufiBankVerification() {
   return (
     <div className="font-sarabun bg-[#001334] pb-10 w-full flex flex-col items-center justify-center">
       <div className="bg-[#001334] py-8 md:py-12 px-4">
-        <h1 className="text-center font-bold text-white text-2xl sm:text-3xl md:text-4xl">
+        <h1 className="text-center font-bold text-white text-4xl sm:text-3xl md:text-4xl">
           AcuFi Bank Verification
         </h1>
       </div>
