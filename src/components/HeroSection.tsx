@@ -147,14 +147,14 @@ export default function HeroSection() {
             {showOverlay && (
               <div className="absolute inset-0 z-20 pointer-events-none">
                 {/* Box 1 */}
-                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[52%] xl:top-[54%] w-[36%] sm:w-[62%] md:w-[33%] lg:w-[30%] xl:w-[30%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[51.4%] sm:top-[53%] md:top-[53%] lg:top-[53%] xl:top-[54%] w-[36%] sm:w-[62%] md:w-[33%] lg:w-[30%] xl:w-[30%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
                   <p className="font-semibold text-[6px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
                     Get underwritten in 1–2 days
                   </p>
                 </div>
 
                 {/* Box 2 */}
-                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[67%] xl:top-[69%] w-[48%] sm:w-[62%] md:w-[38%] lg:w-[40%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
+                <div className="absolute pointer-events-auto left-[6%] sm:left-[8%] md:left-[8%] lg:left-[8%] xl:left-[8%] top-[66.5%] sm:top-[68%] md:top-[68%] lg:top-[68%] xl:top-[69%] w-[48%] sm:w-[62%] md:w-[38%] lg:w-[40%] xl:w-[54%] text-white rounded-xl p-3 sm:p-3.5 md:p-2">
                   <p className="font-semibold text-[7px] sm:text-[9px] md:text-[14px] lg:text-[10px] xl:text-[12px] leading-snug">
                     Full-service business banking
                   </p>
