@@ -139,32 +139,28 @@ export default function FaqSection() {
             <div className="text-[#181F2C] mb-4 text-xs sm:text-sm md:text-base">
               Can’t find the answer you’re looking for?
             </div>
-            <>
-              <button
-                type="button"
-                className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[280px] px-7"
-                style={{
-                  backgroundImage: "url('/AcuViewButtonBg.webp')",
-                  backgroundSize: "100% 100%",
-                  backgroundRepeat: "no-repeat",
-                  paddingBottom: "25px",
-                }}
-                aria-label="Start Your Free 90-Day Trial"
-                onClick={() =>
-                  (window.location.href = "https://acufi.com/lets-connect/")
-                }
-              >
-                <Image
-                  src="/RocketIcon.png"
-                  alt="Rocket Icon"
-                  width={20}
-                  height={20}
-                />
-                <span className="ml-2 whitespace-nowrap">
-                Get Your Demo!
-                </span>
-              </button>
-            </>
+            <button
+              type="button"
+              className="flex items-center justify-center h-[90px] text-white font-semibold cursor-pointer w-[270px] sm:w-[280px] px-7"
+              style={{
+                backgroundImage: "url('/AcuViewButtonBg.webp')",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
+                paddingBottom: "25px",
+              }}
+              aria-label="Start Your Free 90-Day Trial"
+              onClick={() =>
+                (window.location.href = "https://acufi.com/lets-connect/")
+              }
+            >
+              <Image
+                src="/RocketIcon.png"
+                alt="Rocket Icon"
+                width={20}
+                height={20}
+              />
+              <span className="ml-2 whitespace-nowrap">Get Your Demo!</span>
+            </button>
           </div>
         </div>
       </div>
