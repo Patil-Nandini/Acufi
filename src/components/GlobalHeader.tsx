@@ -3,17 +3,18 @@ import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 import Link from "next/link";
-
-export default function Header() {
+ 
+ 
+export default function GlobalHeader() {
   const [isOpen, setIsOpen] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
-
+ 
   const products = [
     {
       name: "AcuCheck",
       desc: "Cash Flow Is the New Credit Score",
       icon: "/AcuChcek-Favicon.webp",
-      href: "/under-renovation",
+      href: "/under-renovation"
     },
     {
       name: "AcuPay",
@@ -39,28 +40,28 @@ export default function Header() {
       name: "AcuSky",
       desc: "All in One Solution for Airport Management.",
       icon: "/AcuSky.png",
-      href: "/under-renovation",
+      href: "/under-renovation"
     },
   ];
-
+ 
   return (
     <header className="w-full absolute top-0 left-0 z-20  bg-[rgba(255,255,255,0.1)]">
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2 cursor-pointer">
+        <div className="flex items-center space-x-2 cursor-pointer" onClick={() => (window.location.href = "/")}>
           <Image
-            src="/AcufiLogo.png"
+            src="/AcufiFullLight.png"
             alt="AcuFi Logo"
             width={150}
             height={40}
             priority
           />
         </div>
-
+ 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-8 text-white font-medium ">
+        <nav className="hidden lg:flex space-x-8 text-black font-medium ">
           <div className="relative group">
-            <button className="flex font-medium text-white font-semibold text-md  transition">
+            <button className="flex font-medium text-black font-semibold text-md  transition">
               Products
               <svg
                 className="w-4 h-4 mt-1.5 ml-2 transition-transform duration-200 group-hover:rotate-180"
@@ -78,12 +79,12 @@ export default function Header() {
             </button>
             {/* Dropdown */}
             <div
-              className="absolute top-full mt-2.5 w-80 
-             border border-white border-[1px] 
-             rounded-xl rounded-t-[12px] 
-             bg-[linear-gradient(274.17deg,rgba(250,251,252,0.5)_0%,rgba(227,241,255,0.5)_100%)] 
-             shadow-lg p-4 z-50 
-             opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+              className="absolute top-full mt-2.5 w-80
+             border border-white border-[1px]
+             rounded-xl rounded-t-[12px]
+             bg-[linear-gradient(274.17deg,rgba(250,251,252,0.5)_0%,rgba(227,241,255,0.5)_100%)]
+             shadow-lg p-4 z-50
+             opacity-0 invisible group-hover:opacity-100 group-hover:visible
              transition-all duration-200"
             >
               <div
@@ -95,7 +96,7 @@ export default function Header() {
               >
                 <h4 className="text-gray-700 font-semibold mb-4 uppercase text-sm ">
                   Products
-                </h4>
+                </h4>{" "}
                 <ul className="space-y-4">
                   {products.map((product) => (
                     <li
@@ -111,19 +112,13 @@ export default function Header() {
                         />
                       </div>
                       <div className="flex flex-col">
-                        {/* Use Link only if href exists */}
-                        {product.href ? (
-                          <Link
-                            href={product.href}
-                            className="font-semibold text-[14px] text-[#0F1720] hover:underline cursor-pointer"
-                          >
-                            {product.name}
-                          </Link>
-                        ) : (
-                          <span className="font-semibold text-[14px] text-[#0F1720]">
-                            {product.name}
-                          </span>
-                        )}
+                        {/* 👇 Make this a Link */}
+                        <Link
+                          href="/under-renovation"
+                          className="font-semibold text-[14px] text-[#0F1720] hover:underline cursor-pointer"
+                        >
+                          {product.name}
+                        </Link>
                         <span className="text-[#677489] text-[12px] leading-snug">
                           {product.desc}
                         </span>
@@ -132,9 +127,9 @@ export default function Header() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div>{" "}
           </div>
-
+ 
           <span className="font-semibold text-md cursor-pointer">
             Use Cases
           </span>
@@ -146,18 +141,18 @@ export default function Header() {
           </span>
           <span className="font-semibold text-md cursor-pointer">Login</span>
         </nav>
-
+ 
         {/* Desktop CTA */}
-        <div className="hidden lg:block">
+         <div className="hidden lg:block">
           <button
             type="button"
             onClick={() =>
               (window.location.href = "https://acufi.com/lets-connect/")
             }
-            className="flex items-center space-x-2 px-5 py-2 border-2 border-white rounded-full text-white font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer"
+            className="flex items-center space-x-2 px-5 py-2 border-2 border-[#085AAC] rounded-full text-[#085AAC] font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer"
           >
             <Image
-              src="/RocketIcon.png"
+              src="/RocketHeader.png"
               alt="Rocket Icon"
               width={20}
               height={20}
@@ -165,7 +160,7 @@ export default function Header() {
             <span>Get Started</span>
           </button>
         </div>
-
+ 
         {/* Mobile Hamburger */}
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -183,7 +178,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-
+ 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white shadow-lg px-6 py-4 space-y-4">
@@ -209,7 +204,7 @@ export default function Header() {
                 />
               </svg>
             </button>
-
+ 
             {/* Mobile Products List */}
             {showProducts && (
               <ul className="mt-3 space-y-3">
@@ -227,19 +222,9 @@ export default function Header() {
                       />
                     </div>
                     <div className="flex flex-col">
-                      {/* Use Link only if href exists */}
-                      {product.href ? (
-                        <Link
-                          href={product.href}
-                          className="font-semibold text-[14px] text-[#0F1720] hover:underline cursor-pointer"
-                        >
-                          {product.name}
-                        </Link>
-                      ) : (
-                        <span className="font-semibold text-[14px] text-[#0F1720]">
-                          {product.name}
-                        </span>
-                      )}
+                      <span className="font-semibold text-[14px] text-[#0F1720]">
+                        {product.name}
+                      </span>
                       <span className="text-[#677489] text-[12px] leading-snug">
                         {product.desc}
                       </span>
@@ -249,20 +234,20 @@ export default function Header() {
               </ul>
             )}
           </div>
-
+ 
           <span className="block font-semibold text-[#0F1720] ">Use Cases</span>
           <span className="block font-semibold text-[#0F1720]">Developer</span>
           <span className="block font-semibold text-[#0F1720]">Resources</span>
           <span className="block font-semibold text-[#0F1720]">Login</span>
-
+ 
           <button
             onClick={() =>
               (window.location.href = "https://acufi.com/lets-connect/")
             }
-            className="flex w-full justify-center items-center space-x-2 px-5 py-2 border-2 border-[#01459FCC] rounded-full text-[#01459FCC] font-medium shadow cursor-pointer"
+            className="flex w-full justify-center items-center space-x-2 px-5 py-2 border-2 border-[#085AAC] rounded-full text-[#085AAC] font-medium shadow cursor-pointer"
           >
             <Image
-              src="/RocketIcon.png"
+              src="/RocketHeader.png"
               alt="Rocket Icon"
               width={20}
               height={20}
