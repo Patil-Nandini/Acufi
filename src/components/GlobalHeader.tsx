@@ -45,7 +45,7 @@ export default function GlobalHeader() {
   ];
  
   return (
-    <header className="w-full absolute top-0 left-0 z-20  bg-[rgba(255,255,255,0.1)]">
+    <header className="w-full absolute top-0 left-0 z-20  bg-[rgba(255,255,255,0.1)] font-sarabun">
       <div className="w-full max-w-[1920px] mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 cursor-pointer" onClick={() => (window.location.href = "/")}>
@@ -152,7 +152,7 @@ export default function GlobalHeader() {
             className="flex items-center space-x-2 px-5 py-2 border-2 border-[#085AAC] rounded-full text-[#085AAC] font-medium shadow-[0px_5px_18px_-9.3px_#01459FCC] cursor-pointer"
           >
             <Image
-              src="/RocketHeader.png"
+              src="/BlueR.svg"
               alt="Rocket Icon"
               width={20}
               height={20}
@@ -247,7 +247,7 @@ export default function GlobalHeader() {
             className="flex w-full justify-center items-center space-x-2 px-5 py-2 border-2 border-[#085AAC] rounded-full text-[#085AAC] font-medium shadow cursor-pointer"
           >
             <Image
-              src="/RocketHeader.png"
+              src="/BlueR.svg"
               alt="Rocket Icon"
               width={20}
               height={20}
