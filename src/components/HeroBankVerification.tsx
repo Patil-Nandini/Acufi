@@ -5,7 +5,7 @@ import React from "react";
 
 export default function HeroBankVerification() {
   return (
-    <section className="w-full flex flex-col h-[100vh] py-10 bg-[url('/Hero_bg.png')] bg-no-repeat bg-center bg-cover">
+    <section className="w-full flex flex-col  py-10 bg-[url('/Hero_bg.png')] bg-no-repeat bg-center bg-cover">
       <div className="w-[92%] mx-auto flex flex-col gap-10">
         {/* Heading row: stacked on small, inline on md+ */}
         <div className="flex flex-col  md:gap-6 gap-4 text-left ml-35 ">
@@ -26,28 +26,29 @@ export default function HeroBankVerification() {
         </div>
 
         {/* Frame container (BankingFrame as background) */}
-        <div className="relative w-full max-w-[2400px] mx-auto -mt-32">
+        <div className="relative w-full max-w-[2400px] mx-auto -mt-40">
           <div
             className="relative w-full bg-[url('/BankingFrame.png')] bg-no-repeat bg-center bg-contain
-                       h-[360px] sm:h-[420px] md:h-[500px] lg:h-[560px] xl:h-[620px] 2xl:h-[800px]"
+                       h-[360px] sm:h-[420px] md:h-[500px] lg:h-[560px] xl:h-[620px] 2xl:h-[860px]"
           >
             {/* LEFT-side stack (card then button) */}
             <div
-              className="absolute left-8 top-12 md:left-12 md:top-16 lg:left-46 lg:top-65
-                         flex flex-col items-start gap-6
+              className="absolute left-8 top-10 md:left-12 md:top-16 lg:left-46 lg:top-65
+                         flex flex-col items-start gap-2
                          w-[250px] sm:w-[300px] md:w-[320px]"
             >
               {/* DESIGNED CARD (Figma-like) */}
-              <div className="relative">
+              <div className="relative ">
                 {/* Shield badge overlapping top center */}
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                  {/* Replace this with the real shield image if available */}
-                  <div className="w-12 h-12 rounded-full bg-[#EAF4FF] flex items-center justify-center">
-                    <span className="text-[#2b7be4] font-bold">A</span>
-                  </div>
-                </div>
+                <div
+    className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full  flex items-center justify-center
+      bg-[url('/shield_icon.svg')] bg-no-repeat bg-center bg-contain"
+  ></div>
 
-                <div className="mt-8 bg-white rounded-xl p-5 pt-8 shadow-[0_10px_30px_rgba(11,35,64,0.08)] border border-white/60">
+
+                <div className="mt-8  bg-[url('/herocard_bg.png')] bg-cover bg-center bg-no-repeat rounded-3xl p-10 overflow-hidden
+                                w-[250px] sm:w-[300px] md:w-[320px] h-[200px] sm:h-[240px] md:h-[330px]">
+                  {/* Card content */}
                   <p className="text-sm text-[#243646]">No more delays.</p>
                   <p className="text-sm text-[#243646] mt-1">No more fraud.</p>
 
@@ -61,8 +62,9 @@ export default function HeroBankVerification() {
               {/* Contact / Book a Demo button (dark rounded as in figma) */}
               <div
                 className="relative overflow-hidden cursor-pointer group rounded-[16px]
-                           w-[220px] sm:w-[240px] md:w-[240px] h-[84px] flex items-center justify-center
-                           bg-gradient-to-r from-[#0b203f] to-[#071a2b] text-white shadow-lg"
+                           w-[220px] sm:w-[240px] md:w-[320px] h-[184px] flex items-center justify-center
+                             bg-[url('/Primary_button_bg.png')] bg-cover bg-center bg-no-repeat
+                        text-white "
                 onClick={() => {
                   window.location.href = "https://acufi.com/lets-connect/";
                 }}

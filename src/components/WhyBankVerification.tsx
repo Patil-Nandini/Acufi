@@ -34,16 +34,16 @@ export default function WhyBankVerification() {
         bg-[#C5DCFD]
       "
     >
-      <div className="w-[100%]">
+      <div className="w-[100%] ">
         {/* Container with inner border / padded card area */}
         <div
           className="
            
-            px-6 py-10 md:px-10 md:py-14  bg-[url('/BankVerificationBg.png')] bg-no-repeat bg-center bg-cover rounded-3xl 
+            px-6 py-10 md:px-10 md:py-14  bg-[url('/BankVerificationBg.png')] bg-no-repeat bg-center bg-cover rounded-3xl lg:h-[100vh]
           "
         >
           {/* Heading */}
-          <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+          <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12  ">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#0b2340]">
               Why Bank Verification Matters
             </h2>
@@ -63,7 +63,7 @@ export default function WhyBankVerification() {
                   rounded-2xl overflow-hidden
                   p-6 md:p-8
                   bg-[url('/CardBg.png')] bg-no-repeat bg-center bg-contain
-                  min-h-[340px]
+                  min-h-[360px]
                 "
               >
                 {/* Top image (will be replaced by animation later) */}
@@ -74,7 +74,7 @@ export default function WhyBankVerification() {
                     hover:-translate-y-4 hover:scale-[1.02]
                   "
                 >
-                  <div className="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[150px] flex items-center justify-center">
+                  <div className="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[150px] md:h-[290px] flex items-center justify-center">
                     <Image
                       src={c.img}
                       alt={c.title}
@@ -87,7 +87,7 @@ export default function WhyBankVerification() {
                 </div>
 
                 {/* Content below */}
-                <div className="mt-6 flex-1 flex flex-col justify-start">
+                <div className="my-6 flex-1 flex flex-col justify-start">
                   <h3 className="text-lg md:text-xl font-semibold text-[#0b2340]">{c.title}</h3>
                   <p className="mt-3 text-sm md:text-base text-[#334155] leading-relaxed w-[200px]">
                     {c.desc}
